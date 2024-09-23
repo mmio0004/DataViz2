@@ -56,7 +56,7 @@
             "lookup": "properties.NAME",
             "from": {
               "data": {
-                "url": "https://raw.githubusercontent.com/mmio0004/DataViz2/main/data/Cleaned_Cardiovascular_Disease_Death_Rate_Data__2021_.csv"
+                "url": "https://raw.githubusercontent.com/mmio0004/DataViz2/main/data/Cleaned_Cardiovascular_Disease_Death_Rate_Data__2021.csv"
               },
               "key": "Entity",
               "fields": ["Age-standardized death rate from cardiovascular diseases among both sexes"]
