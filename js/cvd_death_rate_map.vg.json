@@ -73,7 +73,7 @@
             "title": "Death Rate (per 100,000)",
             "type": "quantitative",
             "scale": {
-              "scheme": "reds"
+              "scheme": "oranges"
             }
           },
           "tooltip": [
