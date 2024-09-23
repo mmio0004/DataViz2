@@ -1,0 +1,91 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Age-Standardized Death Rate from Cardiovascular Diseases (2021)",
+      "color": "#092215",
+      "fontSize": 13
+    },
+    "width": 800,
+    "height": 400,
+    "data": {
+      "url": "https://raw.githubusercontent.com/mmio0004/W9_Homework/main/ne_110m_admin_0_countries.json",
+      "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+    },
+    "projection": {"type": "equalEarth"},
+    "layer": [
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/mmio0004/W9_Homework/main/oceans.topo.json",
+          "format": {"type": "topojson", "feature": "oceans"}
+        },
+        "mark": {
+          "type": "geoshape",
+          "fill": "skyblue"
+        }
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/mmio0004/W9_Homework/main/WorldMapWithGraticules.topojson",
+          "format": {"type": "topojson", "feature": "ne_110m_graticules_30"}
+        },
+        "mark": {
+          "type": "geoshape",
+          "fill": null,
+          "stroke": "lightgray"
+        }
+      },
+      {
+        "transform": [
+          {
+            "calculate": "'Data is not available in ' + datum.properties.NAME",
+            "as": "note"
+          }
+        ],
+        "mark": {
+          "type": "geoshape",
+          "fill": "lightgray",
+          "stroke": "white"
+        },
+        "encoding": {
+          "tooltip": {"field": "note"}
+        }
+      },
+      {
+        "transform": [
+          {
+            "lookup": "properties.NAME",
+            "from": {
+              "data": {
+                "url": "https://raw.githubusercontent.com/mmio0004/DataViz2/main/data/Filtered_Cardiovascular_Disease_Death_Rate_Data__2021_.csv"
+              },
+              "key": "Entity",
+              "fields": ["Age-standardized death rate from cardiovascular diseases among both sexes"]
+            }
+          }
+        ],
+        "mark": {
+          "type": "geoshape",
+          "stroke": "white"
+        },
+        "encoding": {
+          "color": {
+            "field": "Age-standardized death rate from cardiovascular diseases among both sexes",
+            "title": "Death Rate (per 100,000)",
+            "type": "quantitative",
+            "scale": {
+              "scheme": "reds"
+            }
+          },
+          "tooltip": [
+            {"field": "properties.NAME", "type": "nominal", "title": "Country"},
+            {
+              "field": "Age-standardized death rate from cardiovascular diseases among both sexes",
+              "type": "quantitative",
+              "title": "Death Rate (per 100,000)"
+            }
+          ]
+        }
+      }
+    ]
+  }
+  
