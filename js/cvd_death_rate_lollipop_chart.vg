@@ -21,12 +21,13 @@
           "y": {
             "field": "Entity",
             "type": "ordinal",
-            "title": "Continent"
+            "title": "Continent",
+            "sort": "-x"
           },
           "color": {
             "condition": {
               "test": "datum['Age-standardized death rate from cardiovascular diseases among both sexes'] > 250",
-              "value": "Red"
+              "value": "#f06a18"
             },
             "value": "Black"
           }
@@ -44,7 +45,7 @@
           "color": {
             "condition": {
               "test": "datum['Age-standardized death rate from cardiovascular diseases among both sexes'] > 250",
-              "value": "Red"
+              "value": "#f06a18"
             },
             "value": "Black"
           },
@@ -54,34 +55,13 @@
           },
           "y": {
             "field": "Entity",
-            "type": "ordinal"
-          }
-        }
-      },
-      {
-        "description": "Value label",
-        "mark": {
-          "type": "text",
-          "baseline": "top",
-          "dy": -10
-        },
-        "encoding": {
-          "color": {
-            "condition": {
-              "test": "datum['Age-standardized death rate from cardiovascular diseases among both sexes'] > 250",
-              "value": "Red"
-            },
-            "value": "Black"
+            "type": "ordinal",
+            "sort": "-x"
           },
-          "x": {
-            "field": "Age-standardized death rate from cardiovascular diseases among both sexes",
-            "type": "quantitative"
-          },
-          "y": {
-            "field": "Entity",
-            "type": "ordinal"
-          },
-          "text": {"field": "Age-standardized death rate from cardiovascular diseases among both sexes"}
+          "tooltip": [
+            {"field": "Entity", "title": "Continent"},
+            {"field": "Age-standardized death rate from cardiovascular diseases among both sexes", "title": "Death Rate per 100,000 population"}
+          ]
         }
       }
     ]
