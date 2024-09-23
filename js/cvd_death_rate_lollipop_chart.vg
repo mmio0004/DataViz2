@@ -1,0 +1,89 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Lollipop chart representing cardiovascular disease death rates by continent (2021)",
+    "data": {
+      "url": "https://raw.githubusercontent.com/mmio0004/DataViz2/main/data/Cleaned_Dataset_with_Continents__2021.csv"
+    },
+    "layer": [
+      {
+        "description": "Lollipop Stick",
+        "mark": {
+          "type": "rule",
+          "strokeWidth": 2
+        },
+        "encoding": {
+          "x": {
+            "field": "Age-standardized death rate from cardiovascular diseases among both sexes",
+            "type": "quantitative",
+            "title": "Death Rate"
+          },
+          "x2": {"value": 0},
+          "y": {
+            "field": "Entity",
+            "type": "ordinal",
+            "title": "Continent"
+          },
+          "color": {
+            "condition": {
+              "test": "datum['Age-standardized death rate from cardiovascular diseases among both sexes'] > 250",
+              "value": "Red"
+            },
+            "value": "Black"
+          }
+        }
+      },
+      {
+        "description": "Lollipop",
+        "mark": {
+          "type": "point",
+          "filled": true,
+          "size": 100,
+          "tooltip": true
+        },
+        "encoding": {
+          "color": {
+            "condition": {
+              "test": "datum['Age-standardized death rate from cardiovascular diseases among both sexes'] > 250",
+              "value": "Red"
+            },
+            "value": "Black"
+          },
+          "x": {
+            "field": "Age-standardized death rate from cardiovascular diseases among both sexes",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "Entity",
+            "type": "ordinal"
+          }
+        }
+      },
+      {
+        "description": "Value label",
+        "mark": {
+          "type": "text",
+          "baseline": "top",
+          "dy": -10
+        },
+        "encoding": {
+          "color": {
+            "condition": {
+              "test": "datum['Age-standardized death rate from cardiovascular diseases among both sexes'] > 250",
+              "value": "Red"
+            },
+            "value": "Black"
+          },
+          "x": {
+            "field": "Age-standardized death rate from cardiovascular diseases among both sexes",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "Entity",
+            "type": "ordinal"
+          },
+          "text": {"field": "Age-standardized death rate from cardiovascular diseases among both sexes"}
+        }
+      }
+    ]
+  }
+  
