@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "Lollipop chart representing cardiovascular disease death rates by continent (2021)",
     "data": {
-      "url": "https://raw.githubusercontent.com/mmio0004/DataViz2/main/data/Cleaned_Dataset_with_Continents__2021.csv"
+      "url": "https://raw.githubusercontent.com/mmio0004/DataViz2/main/data/Cleaned_CVD_Dataset_with_Continents_2021.csv"
     },
     "layer": [
       {
