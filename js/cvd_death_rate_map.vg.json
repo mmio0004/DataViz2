@@ -79,7 +79,7 @@
             "param": "clicked_country",
             "field": "Age-standardized death rate from cardiovascular diseases among both sexes",
             "type": "quantitative",
-            "title": "Death Rate per 100,000 population",
+            "title": "Death Rate per 100,000 Population",
             "scale": {
               "scheme": "oranges"
             }
@@ -91,7 +91,7 @@
           {
             "field": "Age-standardized death rate from cardiovascular diseases among both sexes",
             "type": "quantitative",
-            "title": "Death Rate per 100,000 population",
+            "title": "Death Rate per 100,000 Population",
             "format": ".2f"
           }
         ]
