@@ -82,6 +82,10 @@
             "title": "Death Rate (per 100,000 Population)",
             "scale": {
               "scheme": "oranges"
+            },
+            "legend": {
+              "titleLimit": 200, 
+              "labelLimit": 150 
             }
           },
           "value": "lightgray"
