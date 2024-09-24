@@ -135,9 +135,25 @@
     {
       "name": "color",
       "type": "ordinal",
-      "range": "category",
+      "range": [
+        "#a53922",
+        "#377eb8",
+        "#4daf4a",
+        "#984ea3",
+        "#ff7f00"
+      ],
       "domain": {"data": "rawData", "field": "stk1"}
     },
+    {
+      "name": "color2",
+      "type": "ordinal",
+      "range": [
+        "#ea2eb4",
+        "#2ecde0",
+        "#b1935e"
+      ],
+      "domain": {"data": "rawData", "field": "stk2"}
+    },    
     {
       "name": "stackNames",
       "type": "ordinal",
@@ -194,7 +210,18 @@
       "from": {"data": "groups"},
       "encode": {
         "enter": {
-          "fill": {"scale": "color", "field": "grpId"},
+          "fill": [
+            {
+              "test": "datum.stack == 'stk1'",
+              "scale": "color",
+              "field": "grpId"
+            },
+            {
+              "test": "datum.stack == 'stk2'",
+              "scale": "color2",
+              "field": "grpId"
+            }
+          ],
           "width": {"scale": "x", "band": 1}
         },
         "update": {
@@ -206,9 +233,11 @@
             "signal": "datum.grpId + '   ' + format(datum.total, ',.0f') + '   (' + format(datum.percentage, '.1%') + ')'"
           }
         },
-        "hover": {"fillOpacity": {"value": 1}}
+        "hover": {
+          "fillOpacity": {"value": 1}
+        }
       }
-    },
+    },    
     {
       "type": "text",
       "from": {"data": "groups"},
@@ -295,10 +324,22 @@
           "width": {"scale": "x", "band": 1},
           "x": {"scale": "x", "field": "stack"},
           "y": {"field": "y0", "scale": "y"},
-          "y2": {"field": "y1", "scale": "y"}
+          "y2": {"field": "y1", "scale": "y"},
+          "fill": [
+            {
+              "test": "datum.stack == 'stk1'",
+              "scale": "color",
+              "field": "stk1"
+            },
+            {
+              "test": "datum.stack == 'stk2'",
+              "scale": "color2",
+              "field": "stk2"
+            }
+          ]
         }
       }
-    }
+    }    
   ],
   "signals": [
     {
