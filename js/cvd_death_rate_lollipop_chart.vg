@@ -27,7 +27,7 @@
           "color": {
             "condition": {
               "test": "datum['Age-standardized death rate from cardiovascular diseases among both sexes'] > 250",
-              "value": "#f06a18"
+              "value": "#a53922"
             },
             "value": "Black"
           }
@@ -45,7 +45,7 @@
           "color": {
             "condition": {
               "test": "datum['Age-standardized death rate from cardiovascular diseases among both sexes'] > 250",
-              "value": "#f06a18"
+              "value": "#a53922"
             },
             "value": "Black"
           },
