@@ -1,0 +1,46 @@
+continent,risk_factor,year,cardiovascular_diseases_death_rate
+Africa,Air pollution,2021,37.81108763
+Africa,Diet high in sodium,2021,4.833425092
+Africa,High LDL cholesterol,2021,21.33667496
+Africa,High body-mass index,2021,18.46515189
+Africa,High systolic blood pressure,2021,71.80356991
+Africa,Kidney dysfunction,2021,12.55254773
+Africa,Lead exposure,2021,11.62964132
+Africa,Low physical activity,2021,2.209100402
+Africa,Smoking,2021,9.30197082
+Americas,Air pollution,2021,16.46236023
+Americas,Diet high in sodium,2021,11.55160179
+Americas,High LDL cholesterol,2021,39.147412
+Americas,High body-mass index,2021,30.86000948
+Americas,High systolic blood pressure,2021,97.32259534
+Americas,Kidney dysfunction,2021,24.12005458
+Americas,Lead exposure,2021,11.48460371
+Americas,Low physical activity,2021,3.019671281
+Americas,Smoking,2021,18.99582764
+Asia,Air pollution,2021,74.01044539
+Asia,Diet high in sodium,2021,28.18755159
+Asia,High LDL cholesterol,2021,45.59135015
+Asia,High body-mass index,2021,18.1767739
+Asia,High systolic blood pressure,2021,138.5420835
+Asia,Kidney dysfunction,2021,26.87112729
+Asia,Lead exposure,2021,22.84185805
+Asia,Low physical activity,2021,5.078584071
+Asia,Smoking,2021,33.82983766
+Europe,Air pollution,2021,43.04652289
+Europe,Diet high in sodium,2021,26.03165502
+Europe,High LDL cholesterol,2021,98.44513899
+Europe,High body-mass index,2021,57.43045208
+Europe,High systolic blood pressure,2021,231.3738989
+Europe,Kidney dysfunction,2021,50.58808035
+Europe,Lead exposure,2021,16.4795943
+Europe,Low physical activity,2021,8.824804998
+Europe,Smoking,2021,42.07798415
+Oceania,Air pollution,2021,33.7142606795
+Oceania,Diet high in sodium,2021,9.0488655265
+Oceania,High LDL cholesterol,2021,35.41810627
+Oceania,High body-mass index,2021,21.370793015
+Oceania,High systolic blood pressure,2021,76.087768465
+Oceania,Kidney dysfunction,2021,19.085973860000003
+Oceania,Lead exposure,2021,7.6071675055
+Oceania,Low physical activity,2021,2.9727274759999998
+Oceania,Smoking,2021,18.12740176
