@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Death Rate from Cardiovascular Diseases (2021)",
+    "text": "Global Death Rate from Cardiovascular Diseases (2021)",
     "color": "#092215",
     "fontSize": 13
   },
@@ -79,7 +79,7 @@
             "param": "clicked_country",
             "field": "Age-standardized death rate from cardiovascular diseases among both sexes",
             "type": "quantitative",
-            "title": "Death Rate (per 100,000 Population)",
+            "title": "Death Rate (per 100,000 People)",
             "scale": {
               "scheme": "oranges"
             },
@@ -95,7 +95,7 @@
           {
             "field": "Age-standardized death rate from cardiovascular diseases among both sexes",
             "type": "quantitative",
-            "title": "Death Rate (per 100,000 Population)",
+            "title": "Death Rate (per 100,000 People)",
             "format": ".2f"
           }
         ]

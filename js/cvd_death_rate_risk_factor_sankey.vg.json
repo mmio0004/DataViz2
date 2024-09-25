@@ -207,7 +207,7 @@
             "signal": "!groupSelector && (groupHover.stk1 == datum.stk1 || groupHover.stk2 == datum.stk2) ? 1 : 0"
           },
           "tooltip": {
-            "signal": "{'Continent: ': datum.stk1, 'Risk Factor: ': datum.stk2, 'Death Rate (per 100,000 Population): ': format(datum.size, ',.2f')}"
+            "signal": "{'Continent: ': datum.stk1, 'Risk Factor: ': datum.stk2, 'Death Rate (per 100,000 People): ': format(datum.size, ',.2f')}"
           }
         },
         "hover": {"strokeOpacity": {"value": 1}}

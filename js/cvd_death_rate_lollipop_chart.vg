@@ -15,7 +15,7 @@
           "x": {
             "field": "Age-standardized death rate from cardiovascular diseases among both sexes",
             "type": "quantitative",
-            "title": "Death Rate (per 100,000 Population)"
+            "title": "Death Rate (per 100,000 People)"
           },
           "x2": {"value": 0},
           "y": {
@@ -61,7 +61,7 @@
           "tooltip": [
             {"field": "Entity", "title": "Continent"},
             {"field": "Age-standardized death rate from cardiovascular diseases among both sexes", 
-            "title": "Death Rate (per 100,000 Population)",
+            "title": "Death Rate (per 100,000 People)",
             "format": ".2f"
             }
           ]
