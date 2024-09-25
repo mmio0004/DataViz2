@@ -6,16 +6,25 @@
     {
       "name": "rawData",
       "values": [
-        {"key": {"stk1": "node1", "stk2": "aa"}, "doc_count": 7},
-        {"key": {"stk1": "node2", "stk2": "bb"}, "doc_count": 4},
-        {"key": {"stk1": "node3", "stk2": "cc"}, "doc_count": 8},
-        {"key": {"stk1": "node4", "stk2": "bb"}, "doc_count": 6},
-        {"key": {"stk1": "node5", "stk2": "cc"}, "doc_count": 3},
-        {"key": {"stk1": "node1", "stk2": "cc"}, "doc_count": 9},
-        {"key": {"stk1": "node2", "stk2": "aa"}, "doc_count": 5},
-        {"key": {"stk1": "node3", "stk2": "cc"}, "doc_count": 2},
-        {"key": {"stk1": "node4", "stk2": "aa"}, "doc_count": 1},
-        {"key": {"stk1": "node5", "stk2": "bb"}, "doc_count": 4}
+        {"key": {"stk1": "Africa", "stk2": "Overweight"}, "doc_count": 7},
+        {"key": {"stk1": "Africa", "stk2": "High cholesterol"}, "doc_count": 1},
+        {"key": {"stk1": "Africa", "stk2": "High Blood Pressure"}, "doc_count": 9},
+        
+        {"key": {"stk1": "Asia", "stk2": "Overweight"}, "doc_count": 5},
+        {"key": {"stk1": "Asia", "stk2": "High cholesterol"}, "doc_count": 4},
+        {"key": {"stk1": "Asia", "stk2": "High Blood Pressure"}, "doc_count": 1},
+    
+        {"key": {"stk1": "Europe", "stk2": "Overweight"}, "doc_count": 1},  
+        {"key": {"stk1": "Europe", "stk2": "High cholesterol"}, "doc_count": 1},  
+        {"key": {"stk1": "Europe", "stk2": "High Blood Pressure"}, "doc_count": 8},
+    
+        {"key": {"stk1": "Americas", "stk2": "Overweight"}, "doc_count": 1},
+        {"key": {"stk1": "Americas", "stk2": "High cholesterol"}, "doc_count": 6},
+        {"key": {"stk1": "Americas", "stk2": "High Blood Pressure"}, "doc_count": 1},
+    
+        {"key": {"stk1": "Oceania", "stk2": "Overweight"}, "doc_count": 1},
+        {"key": {"stk1": "Oceania", "stk2": "High cholesterol"}, "doc_count": 4},
+        {"key": {"stk1": "Oceania", "stk2": "High Blood Pressure"}, "doc_count": 3}
       ],
       "transform": [
         {"type": "formula", "expr": "datum.key.stk1", "as": "stk1"},
@@ -157,7 +166,7 @@
     {
       "name": "stackNames",
       "type": "ordinal",
-      "range": ["Source", "Destination"],
+      "range": ["Continent", "Risk Factor"],
       "domain": ["stk1", "stk2"]
     }
   ],
