@@ -6,25 +6,25 @@
     {
       "name": "rawData",
       "values": [
-        {"key": {"stk1": "Africa", "stk2": "Overweight"}, "doc_count": 7},
-        {"key": {"stk1": "Africa", "stk2": "High cholesterol"}, "doc_count": 1},
-        {"key": {"stk1": "Africa", "stk2": "High Blood Pressure"}, "doc_count": 9},
+        {"key": {"stk1": "Africa", "stk2": "Overweight"}, "doc_count": 18.46515189},
+        {"key": {"stk1": "Africa", "stk2": "High Cholesterol"}, "doc_count": 21.33667496},
+        {"key": {"stk1": "Africa", "stk2": "High Blood Pressure"}, "doc_count": 71.80356991},
         
-        {"key": {"stk1": "Asia", "stk2": "Overweight"}, "doc_count": 5},
-        {"key": {"stk1": "Asia", "stk2": "High cholesterol"}, "doc_count": 4},
-        {"key": {"stk1": "Asia", "stk2": "High Blood Pressure"}, "doc_count": 1},
+        {"key": {"stk1": "Asia", "stk2": "Overweight"}, "doc_count": 18.1767739},
+        {"key": {"stk1": "Asia", "stk2": "High Cholesterol"}, "doc_count": 45.59135015},
+        {"key": {"stk1": "Asia", "stk2": "High Blood Pressure"}, "doc_count": 138.5420835},
     
-        {"key": {"stk1": "Europe", "stk2": "Overweight"}, "doc_count": 1},  
-        {"key": {"stk1": "Europe", "stk2": "High cholesterol"}, "doc_count": 1},  
-        {"key": {"stk1": "Europe", "stk2": "High Blood Pressure"}, "doc_count": 8},
+        {"key": {"stk1": "Europe", "stk2": "Overweight"}, "doc_count": 57.43045208},  
+        {"key": {"stk1": "Europe", "stk2": "High Cholesterol"}, "doc_count": 98.44513899},  
+        {"key": {"stk1": "Europe", "stk2": "High Blood Pressure"}, "doc_count": 231.3738989},
     
-        {"key": {"stk1": "Americas", "stk2": "Overweight"}, "doc_count": 1},
-        {"key": {"stk1": "Americas", "stk2": "High cholesterol"}, "doc_count": 6},
-        {"key": {"stk1": "Americas", "stk2": "High Blood Pressure"}, "doc_count": 1},
+        {"key": {"stk1": "Americas", "stk2": "Overweight"}, "doc_count": 30.86000948},
+        {"key": {"stk1": "Americas", "stk2": "High Cholesterol"}, "doc_count": 39.147412},
+        {"key": {"stk1": "Americas", "stk2": "High Blood Pressure"}, "doc_count": 97.32259534},
     
-        {"key": {"stk1": "Oceania", "stk2": "Overweight"}, "doc_count": 1},
-        {"key": {"stk1": "Oceania", "stk2": "High cholesterol"}, "doc_count": 4},
-        {"key": {"stk1": "Oceania", "stk2": "High Blood Pressure"}, "doc_count": 3}
+        {"key": {"stk1": "Oceania", "stk2": "Overweight"}, "doc_count": 21.37079302},
+        {"key": {"stk1": "Oceania", "stk2": "High Cholesterol"}, "doc_count": 35.41810627},
+        {"key": {"stk1": "Oceania", "stk2": "High Blood Pressure"}, "doc_count": 76.08776847}
       ],
       "transform": [
         {"type": "formula", "expr": "datum.key.stk1", "as": "stk1"},
