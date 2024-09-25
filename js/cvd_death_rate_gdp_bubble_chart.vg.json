@@ -138,7 +138,7 @@
           "color": {"value": "black"},
           "opacity": {
             "condition": {
-              "test": "datum['Entity'] == 'China' || datum['Entity'] == 'United States' || datum['Entity'] == 'India' || datum['Entity'] == 'Australia' || datum['Entity'] == 'Malaysia'",
+              "test": "datum['Entity'] == 'Ethiopia' || datum['Entity'] == 'Russia' || datum['Entity'] == 'China' || datum['Entity'] == 'United States' || datum['Entity'] == 'India' || datum['Entity'] == 'Australia' || datum['Entity'] == 'Malaysia'",
               "value": 1
             },
             "value": 0
