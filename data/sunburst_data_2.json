@@ -6,17 +6,20 @@
   {
     "id": 2,
     "name": "Hypertensive Heart Disease",
-    "parent": 1
+    "parent": 1,
+    "size": 1332032
   },
   {
     "id": 3,
     "name": "Ischemic Heart Disease",
-    "parent": 1
+    "parent": 1,
+    "size": 9016629
   },
   {
     "id": 4,
     "name": "Rheumatic Heart Disease",
-    "parent": 1
+    "parent": 1,
+    "size": 374978 
   },
   {
     "id": 5,
