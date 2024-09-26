@@ -1,114 +1,110 @@
 [
   {
     "id": 1,
-    "name": "flare",
-    "size": 1000
+    "name": "flare"
   },
   {
     "id": 2,
-    "name": "Disease Type A",
-    "parent": 1,
-    "size": 1000
+    "name": "Hypertensive Heart Disease",
+    "parent": 1
   },
   {
     "id": 3,
-    "name": "Disease Type B",
-    "parent": 1,
-    "size": 1000
+    "name": "Ischemic Heart Disease",
+    "parent": 1
   },
   {
     "id": 4,
-    "name": "Disease Type C",
-    "parent": 1,
-    "size": 1000
+    "name": "Rheumatic Heart Disease",
+    "parent": 1
   },
   {
     "id": 5,
-    "name": "Sub Type A1",
+    "name": "Oceania",
     "parent": 2,
     "size": 1000
   },
   {
     "id": 6,
-    "name": "Sub Type A2",
+    "name": "Africa",
     "parent": 2,
     "size": 1000
   },
   {
     "id": 7,
-    "name": "Sub Type A3",
+    "name": "Asia",
     "parent": 2,
     "size": 1000
   },
   {
     "id": 8,
-    "name": "Sub Type A4",
+    "name": "Europe",
     "parent": 2,
     "size": 1000
   },
   {
     "id": 9,
-    "name": "Sub Type A5",
+    "name": "Americas",
     "parent": 2,
     "size": 1000
   },
   {
     "id": 10,
-    "name": "Sub Type B1",
+    "name": "Oceania",
     "parent": 3,
     "size": 1000
   },
   {
     "id": 11,
-    "name": "Sub Type B2",
+    "name": "Africa",
     "parent": 3,
     "size": 1000
   },
   {
     "id": 12,
-    "name": "Sub Type B3",
+    "name": "Asia",
     "parent": 3,
     "size": 1000
   },
   {
     "id": 13,
-    "name": "Sub Type B4",
+    "name": "Europe",
     "parent": 3,
     "size": 1000
   },
   {
     "id": 14,
-    "name": "Sub Type B5",
+    "name": "Americas",
     "parent": 3,
     "size": 1000
   },
   {
     "id": 15,
-    "name": "Sub Type C1",
+    "name": "Oceania",
     "parent": 4,
     "size": 1000
   },
   {
     "id": 16,
-    "name": "Sub Type C2",
+    "name": "Africa",
     "parent": 4,
     "size": 1000
   },
   {
     "id": 17,
-    "name": "Sub Type C3",
+    "name": "Asia",
     "parent": 4,
     "size": 1000
   },
   {
     "id": 18,
-    "name": "Sub Type C4",
+    "name": "Europe",
     "parent": 4,
     "size": 1000
   },
   {
     "id": 19,
-    "name": "Sub Type C5",
+    "name": "Americas",
     "parent": 4,
     "size": 1000
   }
