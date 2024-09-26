@@ -8,7 +8,7 @@
   "data": [
     {
       "name": "tree",
-      "url": "https://raw.githubusercontent.com/mmio0004/DataViz2/main/data/sunburst_data.json",
+      "url": "https://raw.githubusercontent.com/mmio0004/DataViz2/main/data/flare_2.json",
       "transform": [
         {
           "type": "stratify",
