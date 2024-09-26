@@ -22,31 +22,31 @@
     "id": 5,
     "name": "Oceania",
     "parent": 2,
-    "size": 1332032
+    "size": 2722
   },
   {
     "id": 6,
     "name": "Africa",
     "parent": 2,
-    "size": 1332032
+    "size": 210465
   },
   {
     "id": 7,
     "name": "Asia",
     "parent": 2,
-    "size": 1332032
+    "size": 749361
   },
   {
     "id": 8,
     "name": "Europe",
     "parent": 2,
-    "size": 1332032
+    "size": 218806
   },
   {
     "id": 9,
     "name": "Americas",
     "parent": 2,
-    "size": 1332032
+    "size": 150678
   },
   {
     "id": 10,
