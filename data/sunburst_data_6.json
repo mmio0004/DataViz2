@@ -1,0 +1,111 @@
+[
+  {
+    "id": 1,
+    "name": "Cardiovascular Diseases Deaths"
+  },
+  {
+    "id": 2,
+    "name": "Hypertensive Heart Disease",
+    "parent": 1
+  },
+  {
+    "id": 3,
+    "name": "Ischemic Heart Disease",
+    "parent": 1
+  },
+  {
+    "id": 4,
+    "name": "Rheumatic Heart Disease",
+    "parent": 1
+  },
+  {
+    "id": 5,
+    "name": "Oceania",
+    "parent": 2,
+    "size": 2722
+  },
+  {
+    "id": 6,
+    "name": "Africa",
+    "parent": 2,
+    "size": 210465
+  },
+  {
+    "id": 7,
+    "name": "Asia",
+    "parent": 2,
+    "size": 749361
+  },
+  {
+    "id": 8,
+    "name": "Europe",
+    "parent": 2,
+    "size": 218806
+  },
+  {
+    "id": 9,
+    "name": "Americas",
+    "parent": 2,
+    "size": 150678
+  },
+  {
+    "id": 10,
+    "name": "Oceania",
+    "parent": 3,
+    "size": 39777
+  },
+  {
+    "id": 11,
+    "name": "Africa",
+    "parent": 3,
+    "size": 717486
+  },
+  {
+    "id": 12,
+    "name": "Asia",
+    "parent": 3,
+    "size": 5257939
+  },
+  {
+    "id": 13,
+    "name": "Europe",
+    "parent": 3,
+    "size": 1920714
+  },
+  {
+    "id": 14,
+    "name": "Americas",
+    "parent": 3,
+    "size": 1080713
+  },
+  {
+    "id": 15,
+    "name": "Oceania",
+    "parent": 4,
+    "size": 374978
+  },
+  {
+    "id": 16,
+    "name": "Africa",
+    "parent": 4,
+    "size": 374978
+  },
+  {
+    "id": 17,
+    "name": "Asia",
+    "parent": 4,
+    "size": 374978
+  },
+  {
+    "id": 18,
+    "name": "Europe",
+    "parent": 4,
+    "size": 374978
+  },
+  {
+    "id": 19,
+    "name": "Americas",
+    "parent": 4,
+    "size": 374978
+  }
+]
