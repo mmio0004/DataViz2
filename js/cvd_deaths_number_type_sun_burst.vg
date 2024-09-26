@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
-  "description": "An example of a sunburst chart with 1 inner, 3 middle, and 15 outer segments.",
+  "description": "A sunburst chart with distinct color ranges for the inner, middle, and outer segments.",
   "width": 600,
   "height": 600,
   "padding": 5,
@@ -30,11 +30,26 @@
     }
   ],
   "scales": [
+
     {
-      "name": "color",
+      "name": "color-inner",
       "type": "ordinal",
-      "domain": {"data": "tree", "field": "depth"},
-      "range": {"scheme": "tableau20"}
+      "domain": {"data": "tree", "field": "name", "filter": "datum.depth === 0"},
+      "range": ["#bac6bf"] 
+    },
+
+    {
+      "name": "color-middle",
+      "type": "ordinal",
+      "domain": {"data": "tree", "field": "name", "filter": "datum.depth === 1"},
+      "range": ["#cba328", "#b45d2d", "#b2347d"] 
+    },
+
+    {
+      "name": "color-outer",
+      "type": "ordinal",
+      "domain": {"data": "tree", "field": "name", "filter": "datum.depth === 2"},
+      "range": ["#a53922", "#377eb8", "#4daf4a", "#984ea3", "#ff7f00", "#a53922", "#377eb8", "#4daf4a", "#984ea3", "#ff7f00"]
     }
   ],
   "marks": [
@@ -45,7 +60,10 @@
         "enter": {
           "x": {"signal": "width / 2"},
           "y": {"signal": "height / 2"},
-          "fill": {"scale": "color", "field": "depth"},
+          
+          "fill": {
+            "signal": "datum.depth === 0 ? scale('color-inner', datum.name) : datum.depth === 1 ? scale('color-middle', datum.name) : scale('color-outer', datum.name)"
+          },
           "tooltip": {"signal": "datum.name + (datum.size ? ', ' + datum.size + ' bytes' : '')"}
         },
         "update": {
