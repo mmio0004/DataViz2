@@ -6,109 +6,106 @@
   {
     "id": 2,
     "name": "Hypertensive Heart Disease",
-    "parent": 1,
-    "size": 1332032
+    "parent": 1
   },
   {
     "id": 3,
     "name": "Ischemic Heart Disease",
-    "parent": 1,
-    "size": 9016629
+    "parent": 1
   },
   {
     "id": 4,
     "name": "Rheumatic Heart Disease",
-    "parent": 1,
-    "size": 374978 
+    "parent": 1
   },
   {
     "id": 5,
     "name": "Oceania",
     "parent": 2,
-    "size": 1000
+    "size": 1332032
   },
   {
     "id": 6,
     "name": "Africa",
     "parent": 2,
-    "size": 1000
+    "size": 1332032
   },
   {
     "id": 7,
     "name": "Asia",
     "parent": 2,
-    "size": 1000
+    "size": 1332032
   },
   {
     "id": 8,
     "name": "Europe",
     "parent": 2,
-    "size": 1000
+    "size": 1332032
   },
   {
     "id": 9,
     "name": "Americas",
     "parent": 2,
-    "size": 1000
+    "size": 1332032
   },
   {
     "id": 10,
     "name": "Oceania",
     "parent": 3,
-    "size": 1000
+    "size": 9016629
   },
   {
     "id": 11,
     "name": "Africa",
     "parent": 3,
-    "size": 1000
+    "size": 9016629
   },
   {
     "id": 12,
     "name": "Asia",
     "parent": 3,
-    "size": 1000
+    "size": 9016629
   },
   {
     "id": 13,
     "name": "Europe",
     "parent": 3,
-    "size": 1000
+    "size": 9016629
   },
   {
     "id": 14,
     "name": "Americas",
     "parent": 3,
-    "size": 1000
+    "size": 9016629
   },
   {
     "id": 15,
     "name": "Oceania",
     "parent": 4,
-    "size": 1000
+    "size": 374978
   },
   {
     "id": 16,
     "name": "Africa",
     "parent": 4,
-    "size": 1000
+    "size": 374978
   },
   {
     "id": 17,
     "name": "Asia",
     "parent": 4,
-    "size": 1000
+    "size": 374978
   },
   {
     "id": 18,
     "name": "Europe",
     "parent": 4,
-    "size": 1000
+    "size": 374978
   },
   {
     "id": 19,
     "name": "Americas",
     "parent": 4,
-    "size": 1000
+    "size": 374978
   }
 ]
