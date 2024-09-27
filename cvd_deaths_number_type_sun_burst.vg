@@ -8,10 +8,44 @@
   "data": [
     {
       "name": "tree",
-      "url": "https://raw.githubusercontent.com/mmio0004/DataViz2/main/data/Cleaned_Cardiovascular_Disease_Death_Rate_Data__2021.csv", 
-      "format": {
-        "type": "json"
-      },
+      "values": [
+        {"id": 1, "name": "Total Cardiovascular Diseases Death Rate", "size": 1263.58},
+        {"id": 2, "name": "Hypertensive Heart Disease", "parent": 1, "size": 85.48},
+        {"id": 3, "name": "Ischemic Heart Disease", "parent": 1, "size": 669.68},
+        {"id": 4, "name": "Rheumatic Heart Disease", "parent": 1, "size": 23.13},
+        {"id": 5, "name": "Stroke", "parent": 1, "size": 447.26},
+        {"id": 6, "name": "Cardiomyopathy and Myocarditis", "parent": 1, "size": 38.03},
+
+        {"id": 7, "name": "Oceania", "parent": 2, "size": 13.6},
+        {"id": 8, "name": "Africa", "parent": 2, "size": 15.21},
+        {"id": 9, "name": "Asia", "parent": 2, "size": 16.21},
+        {"id": 10, "name": "Europe", "parent": 2, "size": 25.79},
+        {"id": 11, "name": "Americas", "parent": 2, "size": 14.67},
+
+        {"id": 12, "name": "Oceania", "parent": 3, "size": 172.47},
+        {"id": 13, "name": "Africa", "parent": 3, "size": 51.87},
+        {"id": 14, "name": "Asia", "parent": 3, "size": 113.74},
+        {"id": 15, "name": "Europe", "parent": 3, "size": 226.36},
+        {"id": 16, "name": "Americas", "parent": 3, "size": 105.24},
+
+        {"id": 17, "name": "Oceania", "parent": 4, "size": 10.73},
+        {"id": 18, "name": "Africa", "parent": 4, "size": 1.42},
+        {"id": 19, "name": "Asia", "parent": 4, "size": 6.84},
+        {"id": 20, "name": "Europe", "parent": 4, "size": 2.95},
+        {"id": 21, "name": "Americas", "parent": 4, "size": 1.19},
+
+        {"id": 22, "name": "Oceania", "parent": 5, "size": 117.67},
+        {"id": 23, "name": "Africa", "parent": 5, "size": 47.33},
+        {"id": 24, "name": "Asia", "parent": 5, "size": 108.72},
+        {"id": 25, "name": "Europe", "parent": 5, "size": 122.74},
+        {"id": 26, "name": "Americas", "parent": 5, "size": 50.8},
+
+        {"id": 27, "name": "Oceania", "parent": 6, "size": 2.95},
+        {"id": 28, "name": "Africa", "parent": 6, "size": 3.31},
+        {"id": 29, "name": "Asia", "parent": 6, "size": 3.24},
+        {"id": 30, "name": "Europe", "parent": 6, "size": 16.67},
+        {"id": 31, "name": "Americas", "parent": 6, "size": 6.27}
+      ],
       "transform": [
         {
           "type": "stratify",
