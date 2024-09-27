@@ -1,27 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
-  <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.5.0"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
-  
-  <!-- CSS file -->
-  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardiovascular Disease Visualizations</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-  
-<div id="lollipop"></div>
+    <div class="container">
 
-<script type="text/javascript">
+        <!-- Header section -->
+        <header>
+            <h1>Cardiovascular Disease Data Insights</h1>
+            <p>Data insights on global cardiovascular disease rates and risk factors.</p>
+        </header>
 
-  var spec2 = "js/cvd_death_rate_lollipop_chart.vg.json";
-  vegaEmbed('#lollipop', spec2).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-</script>
+        <!-- Visualization 1 with description -->
+        <section class="visual-section">
+            <div class="pure-g">
+                <div class="pure-u-1-2">
+                    <div id="vis1" class="vis-placeholder"></div>
+                </div>
+                <div class="pure-u-1-2">
+                    <div class="description">
+                        <h2>Cardiovascular Death Rate and GDP</h2>
+                        <p>This bubble chart represents the relationship between GDP per capita and cardiovascular death rates across different countries in 2021.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visualization 2 with description -->
+        <section class="visual-section">
+            <div class="pure-g">
+                <div class="pure-u-1-2">
+                    <div id="vis2" class="vis-placeholder"></div>
+                </div>
+                <div class="pure-u-1-2">
+                    <div class="description">
+                        <h2>Cardiovascular Death Rate by Continent</h2>
+                        <p>This lollipop chart shows the death rates due to cardiovascular diseases across continents in 2021.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visualization 3 with description -->
+        <section class="visual-section">
+            <div class="pure-g">
+                <div class="pure-u-1-2">
+                    <div id="vis3" class="vis-placeholder"></div>
+                </div>
+                <div class="pure-u-1-2">
+                    <div class="description">
+                        <h2>Cardiovascular Death Rate Map</h2>
+                        <p>A geographic map showing cardiovascular death rates worldwide in 2021.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visualization 4 with description -->
+        <section class="visual-section">
+            <div class="pure-g">
+                <div class="pure-u-1-2">
+                    <div id="vis4" class="vis-placeholder"></div>
+                </div>
+                <div class="pure-u-1-2">
+                    <div class="description">
+                        <h2>Risk Factors for Cardiovascular Deaths</h2>
+                        <p>This Sankey diagram illustrates the primary risk factors leading to cardiovascular deaths in 2021.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visualization 5 with description -->
+        <section class="visual-section">
+            <div class="pure-g">
+                <div class="pure-u-1-2">
+                    <div id="vis5" class="vis-placeholder"></div>
+                </div>
+                <div class="pure-u-1-2">
+                    <div class="description">
+                        <h2>Deaths by Cardiovascular Disease Type</h2>
+                        <p>This sunburst chart breaks down the total number of deaths by cardiovascular disease types in 2021, with a focus on the top contributors.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Data sourced from <a href="#">Global Health Data</a>. Visuals created by Cardiovascular Insights Team.</p>
+        </footer>
+
+    </div>
+
+    <!-- Script to embed Vega Visualizations -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+    <!-- Embedding Vega Visualizations -->
+    <script type="text/javascript">
+        vegaEmbed('#vis1', './js/cvd_death_rate_gdp_bubble_chart.vg.json', { "actions": false });
+        vegaEmbed('#vis2', './js/cvd_death_rate_lollipop_chart.vg.json', { "actions": false });
+        vegaEmbed('#vis3', './js/cvd_death_rate_map.vg.json', { "actions": false });
+        vegaEmbed('#vis4', './js/cvd_death_rate_risk_factor_sankey.vg.json', { "actions": false });
+        vegaEmbed('#vis5', './js/cvd_deaths_number_type_sun_burst.vg.json', { "actions": false });
+    </script>
 
 </body>
+
 </html>
