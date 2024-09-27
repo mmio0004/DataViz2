@@ -1,0 +1,16 @@
+continent,cvd_type,year,death_rate
+Africa,Hypertensive heart disease,2021,15.21
+Africa,Ischemic heart disease,2021,51.87
+Africa,Rheumatic heart disease,2021,1.42
+Americas,Hypertensive heart disease,2021,14.67
+Americas,Ischemic heart disease,2021,105.24
+Americas,Rheumatic heart disease,2021,1.19
+Asia,Hypertensive heart disease,2021,16.21
+Asia,Ischemic heart disease,2021,113.74
+Asia,Rheumatic heart disease,2021,6.84
+Europe,Hypertensive heart disease,2021,25.79
+Europe,Ischemic heart disease,2021,226.36
+Europe,Rheumatic heart disease,2021,2.95
+Oceania,Hypertensive heart disease,2021,13.6
+Oceania,Ischemic heart disease,2021,172.47
+Oceania,Rheumatic heart disease,2021,10.73
