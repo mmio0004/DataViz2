@@ -8,7 +8,7 @@
   "data": [
     {
       "name": "tree",
-      "url": "https://raw.githubusercontent.com/mmio0004/DataViz2/main/data/Cleaned_Cardiovascular_Disease_Death_Rate_Data__2021.csv", 
+      "url": "https://raw.githubusercontent.com/mmio0004/DataViz2/main/data/sunburst_data.json", 
       "format": {
         "type": "json"
       },
