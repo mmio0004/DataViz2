@@ -65,7 +65,7 @@
             "signal": "datum.depth === 0 ? scale('color-inner', datum.name) : datum.depth === 1 ? scale('color-middle', datum.name) : scale('color-outer', datum.name)"
           },
           "tooltip": {
-            "signal": "datum.depth === 0 ? {'Total Cardiovascular Diseases Death Rate (per 100,000 People)': format(datum.size, '.2f')} : datum.depth === 1 ? {'Cardiovascular Disease Type': datum.name, 'Death Rate (per 100,000 People)': format(datum.size, '.2f')} : {'Continent': datum.name, 'Death Rate (per 100,000 Population)': format(datum.size, '.2f')}"
+            "signal": "datum.depth === 0 ? {'Total Cardiovascular Diseases Death Rate (per 100,000 People)': format(datum.size, '.2f')} : datum.depth === 1 ? {'Cardiovascular Disease Type': datum.name, 'Death Rate (per 100,000 People)': format(datum.size, '.2f')} : {'Continent  ': datum.name, 'Death Rate (per 100,000 Population)': format(datum.size, '.2f')}"
           }
         },
         "update": {
