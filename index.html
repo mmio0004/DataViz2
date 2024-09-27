@@ -39,7 +39,7 @@
     <div class="pure-g full-width">
       <div class="pure-u-1-1">
         <h2>Hypertension Map</h2>
-        <div id="map" class="vis-container"></div>
+        <div id="lollipop" class="vis-container"></div>
       </div>
     </div>
 
@@ -61,8 +61,8 @@
   <!-- Vega Embed Script for Hypertension and BMI Visualizations -->
   <script type="text/javascript">
     // Embed the hypertension visualization
-    var vg_1 = "hypertension_map.vg.json";
-    vegaEmbed("#map", vg_1).then(function(result) {
+    var vg_1 = "cvd_death_rate_lollipop_chart.vg.json";
+    vegaEmbed("#lollipop", vg_1).then(function(result) {
       // Access the Vega view instance as result.view
     }).catch(console.error);
 
