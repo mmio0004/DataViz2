@@ -37,13 +37,14 @@
       "name": "color-inner",
       "type": "ordinal",
       "domain": {"data": "tree", "field": "name", "filter": "datum.depth === 0"},
-      "range": ["#bac6bf"] 
+      "range": ["#8fa1b2"] 
     },
     {
       "name": "color-middle",
       "type": "ordinal",
-      "domain": {"data": "tree", "field": "name", "filter": "datum.depth === 1"},
-      "range": ["#cba328", "#b45d2d", "#b2347d"] 
+      "domain": ["Hypertensive Heart Disease", "Ischemic Heart Disease", "Rheumatic Heart Disease", 
+      "Stroke", "Cardiomyopathy and Myocarditis"],
+      "range": ["#d49e75", "#d475ab", "#8e6c8a", "#468f96", "#b68900"] 
     },
     {
       "name": "color-outer",
