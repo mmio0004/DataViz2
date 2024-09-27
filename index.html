@@ -61,14 +61,8 @@
   <!-- Vega Embed Script for Hypertension and BMI Visualizations -->
   <script type="text/javascript">
     // Embed the hypertension visualization
-    var vg_1 = "cvd_death_rate_lollipop_chart.vg.json";
-    vegaEmbed("#lollipop", vg_1).then(function(result) {
-      // Access the Vega view instance as result.view
-    }).catch(console.error);
-
-    // Embed the BMI category visualization
-    var vg_2 = "stacked_area_chart_men_weight_categories.vg.json";
-    vegaEmbed("#stacked_area", vg_2).then(function(result) {
+    var vg_2 = "cvd_death_rate_lollipop_chart.vg.json";
+    vegaEmbed("#lollipop", vg_2).then(function(result) {
       // Access the Vega view instance as result.view
     }).catch(console.error);
   </script>
