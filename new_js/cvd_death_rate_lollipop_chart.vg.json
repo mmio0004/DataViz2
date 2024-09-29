@@ -1,0 +1,74 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 800,
+    "height": 600,
+    "description": "Lollipop chart representing cardiovascular disease death rates by continent (2021)",
+    "data": {
+      "url": "https://raw.githubusercontent.com/mmio0004/DataViz2/main/data/Cleaned_CVD_Dataset_with_Continents_2021.csv"
+    },
+    "layer": [
+      {
+        "description": "Lollipop Stick",
+        "mark": {
+          "type": "rule",
+          "strokeWidth": 2
+        },
+        "encoding": {
+          "x": {
+            "field": "Age-standardized death rate from cardiovascular diseases among both sexes",
+            "type": "quantitative",
+            "title": "Death Rate (per 100,000 People)"
+          },
+          "x2": {"value": 0},
+          "y": {
+            "field": "Entity",
+            "type": "ordinal",
+            "title": "Continent",
+            "sort": "-x"
+          },
+          "color": {
+            "condition": {
+              "test": "datum['Age-standardized death rate from cardiovascular diseases among both sexes'] > 250",
+              "value": "#a53922"
+            },
+            "value": "Black"
+          }
+        }
+      },
+      {
+        "description": "Lollipop",
+        "mark": {
+          "type": "point",
+          "filled": true,
+          "size": 100,
+          "tooltip": true
+        },
+        "encoding": {
+          "color": {
+            "condition": {
+              "test": "datum['Age-standardized death rate from cardiovascular diseases among both sexes'] > 250",
+              "value": "#a53922"
+            },
+            "value": "Black"
+          },
+          "x": {
+            "field": "Age-standardized death rate from cardiovascular diseases among both sexes",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "Entity",
+            "type": "ordinal",
+            "sort": "-x"
+          },
+          "tooltip": [
+            {"field": "Entity", "title": "Continent"},
+            {"field": "Age-standardized death rate from cardiovascular diseases among both sexes", 
+            "title": "Death Rate (per 100,000 People)",
+            "format": ".2f"
+            }
+          ]
+        }
+      }
+    ]
+  }
+  
