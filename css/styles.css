@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,69 +7,65 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
     color: #333;
+    padding: 20px;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
 }
 
-header {
+/* Header and Headings */
+header h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 3em;
+    color: #d44e4e;
     text-align: center;
     margin-bottom: 40px;
 }
 
-header h1 {
-    font-size: 3em;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-header span {
-    font-size: 1.5em;
-}
-
-.visual-section {
-    margin-bottom: 60px;
-}
-
-.visual-section h2 {
-    text-align: center;
+h2 {
+    font-family: 'Merriweather', serif;
     font-size: 2em;
-    font-weight: bold;
-    background-color: #f0f0f0;
-    padding: 15px;
-    margin-bottom: 30px;
+    text-align: center;
     color: #333;
+    margin-bottom: 20px;
+}
+
+/* Section Styling */
+.visual-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 .content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    justify-content: space-between;
+    text-align: justify;
 }
 
 .text-block {
-    width: 45%;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    font-size: 1.1em;
-    color: #555;
-    line-height: 1.7;
+    flex: 1;
+    margin-right: 20px;
+}
+
+.text-block p {
+    font-size: 1em;
+    line-height: 1.6;
 }
 
 .chart-block {
-    width: 45%;
-    height: 400px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.chart-block img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
