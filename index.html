@@ -4,129 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardiovascular Disease Visualizations</title>
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap">
+    <title>New York City Dashboard</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 </head>
 
 <body>
     <div class="container">
-
-        <!-- Header section -->
-        <header>
-            <h1>Cardiovascular Disease Data Insights</h1>
-            <p>A comprehensive analysis of global cardiovascular disease rates, risk factors, and impacts in 2021.</p>
+        <!-- Header Section -->
+        <header class="header">
+            <img src="header-image.jpg" alt="New York City" class="header-image">
+            <h1>New York City</h1>
+            <h2>Tourism and Statistics</h2>
         </header>
 
-        <!-- Domain and Overview Section -->
-        <section class="overview">
-            <h2>Understanding Cardiovascular Diseases</h2>
-            <p>Cardiovascular diseases (CVDs) are the leading cause of death globally. This visualisation dashboard explores the complex relationships between economic factors, risk elements, and death rates caused by CVDs across different countries and continents in 2021.</p>
-            <p><strong>Who:</strong> Public health researchers, policymakers, general public.<br>
-               <strong>What:</strong> Key visual insights into CVD death rates and risk factors.<br>
-               <strong>Why:</strong> To identify potential interventions and understand disparities in health outcomes.<br>
-               <strong>How:</strong> By visualizing the data from a global perspective and interpreting the results clearly.</p>
+        <!-- Section 1: Map -->
+        <section class="section">
+            <h3>Global Death Rate from Cardiovascular Diseases (2021)</h3>
+            <p>This map illustrates the age-standardized death rate from cardiovascular diseases across the world in 2021.</p>
+            <div id="cvd_death_rate_map"></div>
         </section>
 
-        <!-- Visualization 1 with description -->
-        <section class="visual-section">
-            <div class="pure-g">
-                <div class="pure-u-1 pure-u-md-1-2">
-                    <div class="description">
-                        <h2>Cardiovascular Death Rate and GDP</h2>
-                        <p>This bubble chart demonstrates the relationship between GDP per capita and cardiovascular death rates across countries. Countries with higher GDPs often show lower death rates from CVDs.</p>
-                        <p><em>Annotation:</em> Hover over each bubble to see specific country data.</p>
-                    </div>
-                </div>
-                <div class="pure-u-1 pure-u-md-1-2">
-                    <div id="vis1" class="vis-placeholder"></div>
-                </div>
-            </div>
+        <!-- Section 2: Lollipop Chart -->
+        <section class="section">
+            <h3>Cardiovascular Disease Death Rates by Continent (2021)</h3>
+            <p>Continental statistics for cardiovascular disease death rates in 2021.</p>
+            <div id="cvd_death_rate_lollipop_chart"></div>
         </section>
 
-        <!-- Visualization 2 with description -->
-        <section class="visual-section">
-            <div class="pure-g">
-                <div class="pure-u-1 pure-u-md-1-2">
-                    <div class="description">
-                        <h2>Cardiovascular Death Rate by Continent</h2>
-                        <p>This lollipop chart visualizes the death rates due to CVDs across different continents. Africa and Europe demonstrate significant variances in death rates compared to other regions.</p>
-                        <p><em>Annotation:</em> Hover on the lollipops for precise death rates.</p>
-                    </div>
-                </div>
-                <div class="pure-u-1 pure-u-md-1-2">
-                    <div id="vis2" class="vis-placeholder"></div>
-                </div>
-            </div>
+        <!-- Section 3: GDP vs Death Rate Bubble Chart -->
+        <section class="section">
+            <h3>Cardiovascular Disease Death Rates vs GDP per Capita (2021)</h3>
+            <p>Bubble chart correlating GDP per capita and death rates from cardiovascular diseases.</p>
+            <div id="cvd_death_rate_gdp_bubble_chart"></div>
         </section>
 
-        <!-- Visualization 3 with description -->
-        <section class="visual-section">
-            <div class="pure-g">
-                <div class="pure-u-1 pure-u-md-1-2">
-                    <div class="description">
-                        <h2>Cardiovascular Death Rate Map</h2>
-                        <p>A geographic map highlighting the CVD death rates across the globe in 2021. Darker regions indicate higher death rates, allowing a quick visual assessment of which countries are most affected.</p>
-                    </div>
-                </div>
-                <div class="pure-u-1 pure-u-md-1-2">
-                    <div id="vis3" class="vis-placeholder"></div>
-                </div>
-            </div>
+        <!-- Section 4: Risk Factor Sankey -->
+        <section class="section">
+            <h3>Risk Factors for Cardiovascular Diseases (2021)</h3>
+            <p>Sankey diagram visualizing the relationship between continents and risk factors for cardiovascular disease deaths.</p>
+            <div id="cvd_death_rate_risk_factor_sankey"></div>
         </section>
 
-        <!-- Visualization 4 with description -->
-        <section class="visual-section">
-            <div class="pure-g">
-                <div class="pure-u-1 pure-u-md-1-2">
-                    <div class="description">
-                        <h2>Risk Factors for Cardiovascular Deaths</h2>
-                        <p>This Sankey diagram demonstrates how various risk factors (e.g., smoking, high cholesterol, high blood pressure) contribute to the global death toll from CVDs in 2021.</p>
-                    </div>
-                </div>
-                <div class="pure-u-1 pure-u-md-1-2">
-                    <div id="vis4" class="vis-placeholder"></div>
-                </div>
-            </div>
+        <!-- Section 5: Sunburst Chart -->
+        <section class="section">
+            <h3>Number of Deaths by Cardiovascular Disease Type (2021)</h3>
+            <p>Sunburst chart showing the breakdown of cardiovascular deaths by type and continent.</p>
+            <div id="cvd_deaths_number_type_sun_burst"></div>
         </section>
-
-        <!-- Visualization 5 with description -->
-        <section class="visual-section">
-            <div class="pure-g">
-                <div class="pure-u-1 pure-u-md-1-2">
-                    <div class="description">
-                        <h2>Deaths by Cardiovascular Disease Type</h2>
-                        <p>This sunburst chart categorizes the leading causes of death from CVDs, focusing on the top contributors such as coronary heart disease and stroke. The outer layers illustrate the contribution of different regions to these figures.</p>
-                    </div>
-                </div>
-                <div class="pure-u-1 pure-u-md-1-2">
-                    <div id="vis5" class="vis-placeholder"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer>
-            <p>Data sourced from <a href="#">Global Health Data</a>. Visuals created by Cardiovascular Insights Team, September 2024.</p>
-        </footer>
-
     </div>
 
-    <!-- Script to embed Vega Visualizations -->
-    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+    <!-- Embedding Vega-Lite Charts -->
+    <script>
+        // Global Death Rate Map
+        vegaEmbed('#cvd_death_rate_map', 'js/cvd_death_rate_map.vg.json').catch(console.error);
 
-    <!-- Embedding Vega Visualizations -->
-    <script type="text/javascript">
-        vegaEmbed('#vis1', './js/cvd_death_rate_gdp_bubble_chart.vg.json', { "actions": false });
-        vegaEmbed('#vis2', './js/cvd_death_rate_lollipop_chart.vg.json', { "actions": false });
-        vegaEmbed('#vis3', './js/cvd_death_rate_map.vg.json', { "actions": false });
-        vegaEmbed('#vis4', './js/cvd_death_rate_risk_factor_sankey.vg.json', { "actions": false });
-        vegaEmbed('#vis5', './js/cvd_deaths_number_type_sun_burst.vg.json', { "actions": false });
+        // Lollipop Chart
+        vegaEmbed('#cvd_death_rate_lollipop_chart', 'js/cvd_death_rate_lollipop_chart.vg.json').catch(console.error);
+
+        // Bubble Chart for GDP vs Death Rate
+        vegaEmbed('#cvd_death_rate_gdp_bubble_chart', 'js/cvd_death_rate_gdp_bubble_chart.vg.json').catch(console.error);
+
+        // Sankey Diagram for Risk Factors
+        vegaEmbed('#cvd_death_rate_risk_factor_sankey', 'js/cvd_death_rate_risk_factor_sankey.vg.json').catch(console.error);
+
+        // Sunburst Chart for Number of Deaths by Disease Type
+        vegaEmbed('#cvd_deaths_number_type_sun_burst', 'js/cvd_deaths_number_type_sun_burst.vg.json').catch(console.error);
     </script>
-
 </body>
 
 </html>
