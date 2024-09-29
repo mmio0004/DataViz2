@@ -1,140 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beat of the World (2021)</title>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-
-    <!-- Stylesheet -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
     <style>
-        * {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: #f5f5f5;
         }
 
         header {
             text-align: center;
-            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #ff4b4b;
+            color: white;
         }
 
         header h1 {
-            font-size: 3.5em;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 10px;
+            font-size: 36px;
+            margin: 0;
         }
 
-        header img {
-            width: 50px;
-            vertical-align: middle;
+        section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
         }
 
-        .visual-section {
-            margin-bottom: 60px;
-        }
-
-        .visual-section h2 {
-            text-align: center;
-            font-size: 2em;
-            font-weight: bold;
-            background-color: #f0f0f0;
-            padding: 15px;
-            margin-bottom: 30px;
-            color: #333;
-            border-radius: 5px;
+        h2 {
+            font-size: 24px;
+            color: #444;
         }
 
         .content {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
+            margin: 20px 0;
         }
 
-        .text-block {
-            flex: 1 1 45%;
+        .text-content {
+            flex: 1;
             padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 10px;
-            font-size: 1.1em;
-            color: #555;
-            line-height: 1.7;
+            font-size: 14px;
+            color: #666;
         }
 
-        .chart-block {
-            flex: 1 1 45%;
-            background-color: #f9f9f9;
-            border-radius: 10px;
+        .chart {
+            flex: 1;
             padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            text-align: center;
         }
 
-        @media (max-width: 900px) {
-            .content {
-                flex-direction: column;
-            }
+        .chart-wrapper {
+            margin-top: 20px;
+        }
 
-            .text-block, .chart-block {
-                width: 100%;
-                margin-bottom: 20px;
-            }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #444;
+            color: white;
+            font-size: 14px;
         }
     </style>
-    
-    <!-- Vega and Vega-Lite libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 </head>
-
 <body>
-    <div class="container">
-        <!-- Title Section -->
-        <header>
-            <img src="https://cdn-icons-png.flaticon.com/512/4685/4685271.png" alt="Heart Icon">
-            <h1>Beat of the World (2021)</h1>
-        </header>
+    <header>
+        <h1>Beat of the World (2021)</h1>
+    </header>
 
-        <!-- Section 1: Map -->
-        <section class="visual-section">
-            <h2>Global Death Rate from Cardiovascular Diseases</h2>
-            <div class="content">
-                <div class="text-block">
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat.</p>
-                </div>
-                <div class="chart-block" id="cvd_death_rate_map"></div>
+    <section>
+        <h2>Global Death Rate from Cardiovascular Diseases</h2>
+        <div class="content">
+            <div class="text-content">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
             </div>
-        </section>
+            <div class="chart" id="cvd-death-rate-map"></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Ranking of Continents with Most Cardiovascular Disease Death Rates</h2>
+        <div class="content">
+            <div class="text-content">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            </div>
+            <div class="chart" id="cvd-death-rate-lollipop-chart"></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Death Rate from Cardiovascular Diseases versus GDP per Capita</h2>
+        <div class="content">
+            <div class="text-content">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            </div>
+            <div class="chart" id="cvd-death-rate-gdp-bubble-chart"></div>
+        </div>
+    </section>
+
+    <div class="footer">
+        &copy; 2021 Cardiovascular Disease Data Visualization
     </div>
 
-    <!-- Embedding Vega-Lite Charts -->
     <script>
-        // Global Death Rate Map
-        vegaEmbed('#cvd_death_rate_map', 'new_js/cvd_death_rate_map.vg.json').catch(console.error);
+        // Embedding Vega-Lite charts
+
+        // Global Death Rate from Cardiovascular Diseases
+        vegaEmbed('#cvd-death-rate-map', 'new_js/cvd_death_rate_map.vg.json').catch(console.error);
+
+        // Ranking of Continents with Most Cardiovascular Disease Death Rates
+        vegaEmbed('#cvd-death-rate-lollipop-chart', 'new_js/cvd_death_rate_lollipop_chart.vg.json').catch(console.error);
+
+        // Death Rate from Cardiovascular Diseases vs GDP per Capita
+        vegaEmbed('#cvd-death-rate-gdp-bubble-chart', 'new_js/cvd_death_rate_gdp_bubble_chart.vg.json').catch(console.error);
     </script>
 </body>
-
 </html>
