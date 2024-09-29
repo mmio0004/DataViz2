@@ -8,65 +8,94 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* General Reset */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
             background-color: #f5f5f5;
+            color: #444;
+            line-height: 1.6;
         }
 
         header {
-            text-align: center;
-            padding: 20px;
             background-color: #ff4b4b;
             color: white;
+            padding: 20px 0;
+            text-align: center;
         }
 
         header h1 {
             font-size: 36px;
-            margin: 0;
+            margin-bottom: 10px;
         }
 
-        section {
+        main {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
             background-color: white;
         }
 
-        h2 {
-            font-size: 24px;
-            color: #444;
+        section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
 
-        .content {
-            display: flex;
-            margin: 20px 0;
+        section h2 {
+            grid-column: 1 / span 2;
+            text-align: center;
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #ddd;
+            padding-bottom: 10px;
         }
 
         .text-content {
-            flex: 1;
-            padding: 20px;
-            font-size: 14px;
-            color: #666;
+            padding: 10px 20px;
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+            background-color: #f0f0f0;
+            border-radius: 8px;
         }
 
         .chart {
-            flex: 1;
             padding: 20px;
-            text-align: center;
         }
 
-        .chart-wrapper {
-            margin-top: 20px;
-        }
-
-        .footer {
+        footer {
             text-align: center;
             padding: 20px;
             background-color: #444;
             color: white;
+            margin-top: 40px;
             font-size: 14px;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media screen and (max-width: 768px) {
+            section {
+                grid-template-columns: 1fr;
+            }
+
+            .chart, .text-content {
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -75,39 +104,38 @@
         <h1>Beat of the World (2021)</h1>
     </header>
 
-    <section>
-        <h2>Global Death Rate from Cardiovascular Diseases</h2>
-        <div class="content">
+    <main>
+        <!-- Section 1: Global Death Rate from Cardiovascular Diseases -->
+        <section>
+            <h2>Global Death Rate from Cardiovascular Diseases</h2>
             <div class="text-content">
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
             </div>
             <div class="chart" id="cvd-death-rate-map"></div>
-        </div>
-    </section>
+        </section>
 
-    <section>
-        <h2>Ranking of Continents with Most Cardiovascular Disease Death Rates</h2>
-        <div class="content">
+        <!-- Section 2: Ranking of Continents with Most Cardiovascular Disease Death Rates -->
+        <section>
+            <h2>Ranking of Continents with Most Cardiovascular Disease Death Rates</h2>
             <div class="text-content">
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
             </div>
             <div class="chart" id="cvd-death-rate-lollipop-chart"></div>
-        </div>
-    </section>
+        </section>
 
-    <section>
-        <h2>Death Rate from Cardiovascular Diseases versus GDP per Capita</h2>
-        <div class="content">
+        <!-- Section 3: Death Rate from Cardiovascular Diseases vs GDP per Capita -->
+        <section>
+            <h2>Death Rate from Cardiovascular Diseases versus GDP per Capita</h2>
             <div class="text-content">
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
             </div>
             <div class="chart" id="cvd-death-rate-gdp-bubble-chart"></div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <div class="footer">
+    <footer>
         &copy; 2021 Cardiovascular Disease Data Visualization
-    </div>
+    </footer>
 
     <script>
         // Embedding Vega-Lite charts
