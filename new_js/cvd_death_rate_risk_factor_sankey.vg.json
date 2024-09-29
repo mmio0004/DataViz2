@@ -170,17 +170,26 @@
       "domain": ["stk1", "stk2"]
     }
   ],
-  "axes": [
+"axes": [
     {
       "orient": "bottom",
       "scale": "x",
+      "domain": false,
+      "ticks": false,
+      "labels": false,
       "encode": {
         "labels": {
           "update": {"text": {"scale": "stackNames", "field": "value"}}
         }
       }
     },
-    {"orient": "left", "scale": "y"}
+    {
+      "orient": "left",
+      "scale": "y",
+      "domain": false,
+      "ticks": false,
+      "labels": false
+    }
   ],
   "marks": [
     {
