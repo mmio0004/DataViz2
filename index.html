@@ -10,7 +10,99 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        header img {
+            width: 50px;
+            vertical-align: middle;
+        }
+
+        .visual-section {
+            margin-bottom: 60px;
+        }
+
+        .visual-section h2 {
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            background-color: #f0f0f0;
+            padding: 15px;
+            margin-bottom: 30px;
+            color: #333;
+            border-radius: 5px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .text-block {
+            flex: 1 1 45%;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .chart-block {
+            flex: 1 1 45%;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media (max-width: 900px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .text-block, .chart-block {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
     
     <!-- Vega and Vega-Lite libraries -->
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
@@ -22,7 +114,8 @@
     <div class="container">
         <!-- Title Section -->
         <header>
-            <h1><span role="img" aria-label="heart emoji">💓</span> Beat of the World (2021)</h1>
+            <img src="https://cdn-icons-png.flaticon.com/512/4685/4685271.png" alt="Heart Icon">
+            <h1>Beat of the World (2021)</h1>
         </header>
 
         <!-- Section 1: Map -->
@@ -30,31 +123,9 @@
             <h2>Global Death Rate from Cardiovascular Diseases</h2>
             <div class="content">
                 <div class="text-block">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque magna ac lorem vehicula sollicitudin. Curabitur at ligula quis urna auctor faucibus. Ut aliquet lorem vel ante vehicula, a hendrerit arcu ultrices. Nullam tempor magna eu orci ullamcorper, sit amet eleifend justo dignissim.</p>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat.</p>
                 </div>
                 <div class="chart-block" id="cvd_death_rate_map"></div>
-            </div>
-        </section>
-
-        <!-- Section 2: Lollipop Chart -->
-        <section class="visual-section">
-            <h2>Ranking of Continents with Most Cardiovascular Disease Death Rates</h2>
-            <div class="content">
-                <div class="text-block">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque magna ac lorem vehicula sollicitudin. Curabitur at ligula quis urna auctor faucibus. Ut aliquet lorem vel ante vehicula, a hendrerit arcu ultrices. Nullam tempor magna eu orci ullamcorper, sit amet eleifend justo dignissim.</p>
-                </div>
-                <div class="chart-block" id="cvd_death_rate_lollipop_chart"></div>
-            </div>
-        </section>
-
-        <!-- Section 3: Bubble Chart -->
-        <section class="visual-section">
-            <h2>Death Rate from Cardiovascular Diseases versus GDP per Capita</h2>
-            <div class="content">
-                <div class="text-block">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque magna ac lorem vehicula sollicitudin. Curabitur at ligula quis urna auctor faucibus. Ut aliquet lorem vel ante vehicula, a hendrerit arcu ultrices. Nullam tempor magna eu orci ullamcorper, sit amet eleifend justo dignissim.</p>
-                </div>
-                <div class="chart-block" id="cvd_death_rate_gdp_bubble_chart"></div>
             </div>
         </section>
     </div>
@@ -63,12 +134,6 @@
     <script>
         // Global Death Rate Map
         vegaEmbed('#cvd_death_rate_map', 'new_js/cvd_death_rate_map.vg.json').catch(console.error);
-
-        // Lollipop Chart
-        vegaEmbed('#cvd_death_rate_lollipop_chart', 'new_js/cvd_death_rate_lollipop_chart.vg.json').catch(console.error);
-
-        // Bubble Chart for GDP vs Death Rate
-        vegaEmbed('#cvd_death_rate_gdp_bubble_chart', 'new_js/cvd_death_rate_gdp_bubble_chart.vg.json').catch(console.error);
     </script>
 </body>
 
