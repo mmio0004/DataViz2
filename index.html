@@ -23,19 +23,25 @@
         }
 
         header {
-            background-color: #ff4b4b;
-            color: white;
+            background-color: #000000;
             padding: 20px 0;
             text-align: center;
         }
 
-        header h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .header-container img {
+            max-width: 100%;
+            height: auto;
         }
 
         main {
-            max-width: 1200px; /* Increased to allow more space for sections */
+            max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
             display: grid;
@@ -52,9 +58,9 @@
             padding: 40px;
             box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-            max-width: 1200px; 
-            width: 100%; 
-            overflow: hidden; /* Prevent overflow beyond the white box */
+            max-width: 1200px;
+            width: 100%;
+            overflow: hidden;
         }
 
         section h2 {
@@ -64,6 +70,7 @@
             margin-bottom: 20px;
             border-bottom: 3px solid #ddd;
             padding-bottom: 10px;
+            font-family: 'Georgia', serif;
         }
 
         .text-content {
@@ -107,7 +114,10 @@
 </head>
 <body>
     <header>
-        <h1>Beat of the World (2021)</h1>
+        <div class="header-container">
+            <!-- Replace the text with the image -->
+            <img src="https://raw.githubusercontent.com/mmio0004/DataViz2/main/img/botw.png" alt="Beat of the World (2021)">
+        </div>
     </header>
 
     <main>
