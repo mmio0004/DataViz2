@@ -147,6 +147,24 @@
             </div>
             <div class="chart" id="cvd-death-rate-gdp-bubble-chart"></div>
         </section>
+
+        <!-- Section 4: Cardiovascular Disease Risk Factors (Sankey Diagram) -->
+        <section>
+            <h2>Cardiovascular Disease Risk Factors</h2>
+            <div class="text-content">
+                <p>This diagram shows the distribution of cardiovascular disease risk factors across different continents.</p>
+            </div>
+            <div class="chart" id="cvd-death-rate-risk-factor-sankey"></div>
+        </section>
+
+        <!-- Section 5: Cardiovascular Disease Deaths by Type (Sunburst Chart) -->
+        <section>
+            <h2>Cardiovascular Disease Deaths by Type</h2>
+            <div class="text-content">
+                <p>This sunburst chart illustrates the distribution of cardiovascular disease deaths by disease type and continent.</p>
+            </div>
+            <div class="chart" id="cvd-deaths-number-type-sunburst"></div>
+        </section>
     </main>
 
     <footer>
@@ -164,6 +182,12 @@
 
         // Death Rate from Cardiovascular Diseases vs GDP per Capita
         vegaEmbed('#cvd-death-rate-gdp-bubble-chart', 'new_js/cvd_death_rate_gdp_bubble_chart.vg.json').catch(console.error);
+
+        // Cardiovascular Disease Risk Factors (Sankey Diagram)
+        vegaEmbed('#cvd-death-rate-risk-factor-sankey', 'new_js/cvd_death_rate_risk_factor_sankey.vg.json').catch(console.error);
+
+        // Cardiovascular Disease Deaths by Type (Sunburst Chart)
+        vegaEmbed('#cvd-deaths-number-type-sunburst', 'new_js/cvd_deaths_number_type_sun_burst.vg.json').catch(console.error);
     </script>
 </body>
 </html>
