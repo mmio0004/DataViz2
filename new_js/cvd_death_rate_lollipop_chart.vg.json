@@ -11,7 +11,7 @@
         "description": "Lollipop Stick",
         "mark": {
           "type": "rule",
-          "strokeWidth": 2
+          "strokeWidth": 10
         },
         "encoding": {
           "x": {
@@ -40,7 +40,7 @@
         "mark": {
           "type": "point",
           "filled": true,
-          "size": 100,
+          "size": 500,
           "tooltip": true
         },
         "encoding": {
