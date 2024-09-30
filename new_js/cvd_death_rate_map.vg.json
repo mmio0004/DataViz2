@@ -3,7 +3,9 @@
   "title": {
     "text": "Global Death Rate from Cardiovascular Diseases (2021)",
     "color": "#092215",
-    "fontSize": 13
+    "fontSize": 13,
+    "baseline": "top",
+    "dy": 20
   },
   "width": 600,
   "height": 400,
@@ -85,7 +87,7 @@
             },
             "legend": {
               "titleLimit": 200, 
-              "labelLimit": 150 
+              "labelLimit": 150
             }
           },
           "value": "lightgray"
