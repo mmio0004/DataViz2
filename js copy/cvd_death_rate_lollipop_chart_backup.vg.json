@@ -11,7 +11,7 @@
       "description": "Lollipop Stick",
       "mark": {
         "type": "rule",
-        "strokeWidth": 7
+        "strokeWidth": 10
       },
       "encoding": {
         "x": {
@@ -27,11 +27,13 @@
           "sort": "-x"
         },
         "color": {
-          "condition": {
-            "test": "datum.Entity === 'Africa'",
-            "value": "#a53922"
+          "field": "Entity",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Africa", "Asia", "Europe", "Americas", "Oceania"],
+            "range": ["#a53922", "#377eb8", "#4daf4a", "#984ea3", "#ff7f00"]
           },
-          "value": "#d3d3d3"
+          "legend": null
         }
       }
     },
@@ -40,11 +42,19 @@
       "mark": {
         "type": "point",
         "filled": true,
-        "size": 1500,
-        "opacity": 1,
+        "size": 1000,
         "tooltip": true
       },
       "encoding": {
+        "color": {
+          "field": "Entity",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Africa", "Asia", "Europe", "Americas", "Oceania"],
+            "range": ["#a53922", "#377eb8", "#4daf4a", "#984ea3", "#ff7f00"]
+          },
+          "legend": null
+        },
         "x": {
           "field": "Age-standardized death rate from cardiovascular diseases among both sexes",
           "type": "quantitative"
@@ -53,13 +63,6 @@
           "field": "Entity",
           "type": "ordinal",
           "sort": "-x"
-        },
-        "color": {
-          "condition": {
-            "test": "datum.Entity === 'Africa'",
-            "value": "#a53922"
-          },
-          "value": "#d3d3d3" 
         },
         "tooltip": [
           {
