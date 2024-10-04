@@ -98,14 +98,12 @@ section h2 {
 }
 
 footer {
-    max-width: 1157px;
-    margin: 0 auto;
+    background-color: #000000;
+    max-width: 1120px; /* Set the max-width to match the content */
+    margin: 0 auto; /* Center the header */
+    padding: 20px 0;
     text-align: center;
-    padding: 20px;
-    background-color: #444;
-    color: white;
-    margin-top: 40px;
-    font-size: 14px;
+    border-radius: 10px; /* Optional: round the corners to match the white box */
 }
 
 /* Media Queries for Responsiveness */
@@ -237,16 +235,28 @@ footer {
                     <span style="font-family: 'Arial', sans-serif; color: #ff7f00; font-weight: bold; font-size: 130%;">Oceania</span> sees a significant burden as well (172.47).
                 </p>
             </div>
-            <div class="chart" id="cvd-deaths-number-type-sunburst"></div>
+            <div id="cvd-deaths-number-type-sunburst"></div>
         </section>
     </main>
 
     <footer>
-        &copy; 2021 Cardiovascular Disease Data Visualization
+        <span style="font-family: 'Arial', sans-serif; color: white; font-size: 11px;">A visualisation designed by</span> 
+        <span style="font-family: 'Arial', sans-serif; color: white; font-weight: bold; font-size: 11px;">Mior Afiq</span>
+        <span style="font-family: 'Arial', sans-serif; color: white; font-size: 11px;">on 10/10/2024.</span><br>
+
+        <span style="font-family: 'Arial', sans-serif; color: white; font-size: 11px;">Data provided by</span>
+
+        <span style="font-family: 'Arial', sans-serif; color: white; font-weight: bold; font-size: 11px;">World Health Organization (2024)</span>
+
+        <span style="font-family: 'Arial', sans-serif; color: white; font-size: 11px;">and</span>
+
+        <span style="font-family: 'Arial', sans-serif; color: white; font-weight: bold; font-size: 11px;">Institute for Health Metrics and Evaluation (2024)</span><span style="font-family: 'Arial', sans-serif; color: white; font-size: 11px;">.</span>
+
+
     </footer>
 
     <script>
-        // Embedding Vega-Lite charts
+        // Embedding Vega-Lite/Vega charts
 
         // Global Death Rate from Cardiovascular Diseases
         vegaEmbed('#cvd-death-rate-map', 'new_js/cvd_death_rate_map.vg.json').catch(console.error);
