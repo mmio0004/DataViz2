@@ -95,6 +95,66 @@
           }
         ]
       }
+    },
+    {
+      "description": "Text Annotation for Angola - Line 1",
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 5,
+        "dy": 110,
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "black"
+      },
+      "encoding": {
+        "text": {"value": "Most countries in Africa"}
+      }
+    },
+    {
+      "description": "Text Annotation for Angola - Line 2",
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 5,
+        "dy": 123,
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "black"
+      },
+      "encoding": {
+        "text": {"value": "have very significant"}
+      }
+    },
+    {
+      "description": "Text Annotation for Angola - Line 3",
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 5,
+        "dy": 136,
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "black"
+      },
+      "encoding": {
+        "text": {"value": "cardiovascular disease"}
+      }
+    },
+    {
+      "description": "Text Annotation for Angola - Line 4",
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 5,
+        "dy": 149,
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "black"
+      },
+      "encoding": {
+        "text": {"value": "burden."}
+      }
     }
   ]
 }
