@@ -79,7 +79,7 @@
       "mark": {
         "type": "text",
         "align": "left",
-        "dx": -150,
+        "dx": -140,
         "dy": 30,
         "fontSize": 11,
         "fontWeight": "bold",
@@ -108,7 +108,7 @@
       "mark": {
         "type": "text",
         "align": "left",
-        "dx": -150,
+        "dx": -140,
         "dy": 40, 
         "fontSize": 11,
         "fontWeight": "bold",
@@ -137,7 +137,7 @@
       "mark": {
         "type": "text",
         "align": "left",
-        "dx": -150,
+        "dx": -140,
         "dy": 50, 
         "fontSize": 11,
         "fontWeight": "bold",
