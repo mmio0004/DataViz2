@@ -59,7 +59,7 @@
             "test": "datum.Entity === 'Africa'",
             "value": "#a53922"
           },
-          "value": "#d3d3d3" 
+          "value": "#d3d3d3"
         },
         "tooltip": [
           {
@@ -72,6 +72,93 @@
             "format": ".2f"
           }
         ]
+      }
+    },
+    {
+      "description": "Text Annotation for Africa - Line 1",
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": -150,
+        "dy": 30,
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "black"
+      },
+      "encoding": {
+        "x": {
+          "field": "Age-standardized death rate from cardiovascular diseases among both sexes",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Entity",
+          "type": "ordinal",
+          "sort": "-x"
+        },
+        "text": {
+          "condition": {
+            "test": "datum.Entity === 'Africa'",
+            "value": "Africa’s cardiovascular death rate"
+          }
+        }
+      }
+    },
+    {
+      "description": "Text Annotation for Africa - Line 2",
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": -150,
+        "dy": 40, 
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "black"
+      },
+      "encoding": {
+        "x": {
+          "field": "Age-standardized death rate from cardiovascular diseases among both sexes",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Entity",
+          "type": "ordinal",
+          "sort": "-x"
+        },
+        "text": {
+          "condition": {
+            "test": "datum.Entity === 'Africa'",
+            "value": "is the highest globally, reflecting"
+          }
+        }
+      }
+    },
+    {
+      "description": "Text Annotation for Africa - Line 3",
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": -150,
+        "dy": 50, 
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "black"
+      },
+      "encoding": {
+        "x": {
+          "field": "Age-standardized death rate from cardiovascular diseases among both sexes",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Entity",
+          "type": "ordinal",
+          "sort": "-x"
+        },
+        "text": {
+          "condition": {
+            "test": "datum.Entity === 'Africa'",
+            "value": "severe healthcare challenges."
+          }
+        }
       }
     }
   ]
