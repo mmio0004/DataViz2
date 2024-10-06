@@ -109,7 +109,7 @@
         "type": "text",
         "align": "left",
         "dx": -140,
-        "dy": 40, 
+        "dy": 43, 
         "fontSize": 11,
         "fontWeight": "bold",
         "color": "black"
@@ -138,7 +138,7 @@
         "type": "text",
         "align": "left",
         "dx": -140,
-        "dy": 50, 
+        "dy": 56, 
         "fontSize": 11,
         "fontWeight": "bold",
         "color": "black"
