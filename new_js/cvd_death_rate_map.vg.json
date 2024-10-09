@@ -103,7 +103,7 @@
         "align": "left",
         "dx": 5,
         "dy": 110,
-        "fontSize": 11,
+        "fontSize": 13,
         "fontWeight": "bold",
         "color": "black"
       },
@@ -118,7 +118,7 @@
         "align": "left",
         "dx": 5,
         "dy": 123,
-        "fontSize": 11,
+        "fontSize": 13,
         "fontWeight": "bold",
         "color": "black"
       },
@@ -133,7 +133,7 @@
         "align": "left",
         "dx": 5,
         "dy": 136,
-        "fontSize": 11,
+        "fontSize": 13,
         "fontWeight": "bold",
         "color": "black"
       },
@@ -148,7 +148,7 @@
         "align": "left",
         "dx": 5,
         "dy": 149,
-        "fontSize": 11,
+        "fontSize": 13,
         "fontWeight": "bold",
         "color": "black"
       },
