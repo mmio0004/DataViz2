@@ -1,10 +1,10 @@
 [
-  {"id": 1, "name": "Total Cardiovascular Diseases Death Rate", "size": 1263.58},
+  {"id": 1, "name": "Total Cardiovascular Diseases Death Rate", "size": 1257.99},
   {"id": 2, "name": "Hypertensive Heart Disease", "parent": 1, "size": 85.48},
   {"id": 3, "name": "Ischemic Heart Disease", "parent": 1, "size": 669.68},
   {"id": 4, "name": "Rheumatic Heart Disease", "parent": 1, "size": 23.13},
   {"id": 5, "name": "Stroke", "parent": 1, "size": 447.26},
-  {"id": 6, "name": "Cardiomyopathy and Myocarditis", "parent": 1, "size": 38.03},
+  {"id": 6, "name": "Cardiomyopathy and Myocarditis", "parent": 1, "size": 32.44},
 
   {"id": 7, "name": "Oceania", "parent": 2, "size": 13.6},
   {"id": 8, "name": "Africa", "parent": 2, "size": 15.21},
