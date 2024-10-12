@@ -1,0 +1,26 @@
+By Cardiovascular Disease Type,Reason,Continent,Value,Order
+Hypertensive Heart Disease-Oceania,Hypertensive Heart Disease,Oceania,13.6,1.1
+Hypertensive Heart Disease-Africa,Hypertensive Heart Disease,Africa,15.21,1.2
+Hypertensive Heart Disease-Asia,Hypertensive Heart Disease,Asia,16.21,1.3
+Hypertensive Heart Disease-Europe,Hypertensive Heart Disease,Europe,25.79,1.4
+Hypertensive Heart Disease-Americas,Hypertensive Heart Disease,Americas,14.67,1.5
+Ischemic Heart Disease-Oceania,Ischemic Heart Disease,Oceania,172.47,1.6
+Ischemic Heart Disease-Africa,Ischemic Heart Disease,Africa,51.87,1.7
+Ischemic Heart Disease-Asia,Ischemic Heart Disease,Asia,113.74,1.8
+Ischemic Heart Disease-Europe,Ischemic Heart Disease,Europe,226.36,1.9
+Ischemic Heart Disease-Americas,Ischemic Heart Disease,Americas,105.24,2.0
+Rheumatic Heart Disease-Oceania,Rheumatic Heart Disease,Oceania,10.73,2.1
+Rheumatic Heart Disease-Africa,Rheumatic Heart Disease,Africa,1.42,2.2
+Rheumatic Heart Disease-Asia,Rheumatic Heart Disease,Asia,6.84,2.3
+Rheumatic Heart Disease-Europe,Rheumatic Heart Disease,Europe,2.95,2.4
+Rheumatic Heart Disease-Americas,Rheumatic Heart Disease,Americas,1.19,2.5
+Stroke-Oceania,Stroke,Oceania,117.67,2.6
+Stroke-Africa,Stroke,Africa,47.33,2.7
+Stroke-Asia,Stroke,Asia,108.72,2.8
+Stroke-Europe,Stroke,Europe,122.74,2.9
+Stroke-Americas,Stroke,Americas,50.8,3.0
+Cardiomyopathy and Myocarditis-Oceania,Cardiomyopathy and Myocarditis,Oceania,2.95,3.1
+Cardiomyopathy and Myocarditis-Africa,Cardiomyopathy and Myocarditis,Africa,3.31,3.2
+Cardiomyopathy and Myocarditis-Asia,Cardiomyopathy and Myocarditis,Asia,3.24,3.3
+Cardiomyopathy and Myocarditis-Europe,Cardiomyopathy and Myocarditis,Europe,16.67,3.4
+Cardiomyopathy and Myocarditis-Americas,Cardiomyopathy and Myocarditis,Americas,6.27,3.5
