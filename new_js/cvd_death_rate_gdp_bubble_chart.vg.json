@@ -59,7 +59,7 @@
       "y": {
         "field": "Age-standardized death rate from cardiovascular diseases among both sexes",
         "type": "quantitative",
-        "title": "Death Rate (per 100,000 People)",
+        "title": "Death Rate (per 100,000 People) [Log Scale]",
         "axis": {"tickCount": 6},
         "scale": {"type": "log", "domain": [50, 1000]}
       }
