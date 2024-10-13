@@ -1,0 +1,11 @@
+By Gender,Reason,Gender,Value,Order
+Ischemic Heart Disease-Male,Ischemic Heart Disease,Male,126.35,1
+Ischemic Heart Disease-Female,Ischemic Heart Disease,Female,101.45,2
+Stroke-Male,Stroke,Male,95.35,3
+Stroke-Female,Stroke,Female,88.44,4
+Hypertensive Heart Disease-Male,Hypertensive Heart Disease,Male,14.08,5
+Hypertensive Heart Disease-Female,Hypertensive Heart Disease,Female,19.7,6
+Cardiomyopathy and Myocarditis-Male,Cardiomyopathy and Myocarditis,Male,6.19,7
+Cardiomyopathy and Myocarditis-Female,Cardiomyopathy and Myocarditis,Female,3.99,8
+Rheumatic Heart Disease-Male,Rheumatic Heart Disease,Male,4.06,9
+Rheumatic Heart Disease-Female,Rheumatic Heart Disease,Female,5.41,10
