@@ -166,7 +166,40 @@
         "longitude2": {"field": "longitude2"},
         "latitude2": {"field": "latitude2"}
       }
-    },    
+    },
+    {
+      "transform": [
+        {"filter": "datum.properties.NAME == 'Indonesia'"},
+        {"calculate": "80", "as": "longitude"},
+        {"calculate": "-5", "as": "latitude"},  
+        {
+          "calculate": "split('Indonesia\\'s high \\n cardiovascular death \\n rates are mainly due \\n to high smoking rates', '\\n')",
+          "as": "annotationText"
+        }
+      ],
+      "mark": {"type": "text", "dx": 0, "dy": 0, "color": "black"},
+      "encoding": {
+        "longitude": {"field": "longitude"},
+        "latitude": {"field": "latitude"},
+        "text": {"field": "annotationText"}
+      }
+    },
+    {
+      "transform": [
+        {"filter": "datum.properties.NAME == 'Indonesia'"},
+        {"calculate": "99", "as": "longitude"},
+        {"calculate": "3", "as": "latitude"},  
+        {"calculate": "85", "as": "longitude2"}, 
+        {"calculate": "-2", "as": "latitude2"}  
+      ],
+      "mark": {"type": "rule", "stroke": "black", "strokeWidth": 1},
+      "encoding": {
+        "longitude": {"field": "longitude"},
+        "latitude": {"field": "latitude"},
+        "longitude2": {"field": "longitude2"},
+        "latitude2": {"field": "latitude2"}
+      }
+    },
     {
       "transform": [
         {"filter": "datum.properties.NAME == 'Australia'"},
