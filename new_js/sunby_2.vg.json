@@ -1,21 +1,21 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A layered donut chart with embedded data.",
+  "description": "A layered donut chart with matching angles for segments in both inner and outer circles.",
   "width": 350,
   "height": 400,
   "layer": [
     {
       "data": {
-          "url": "https://raw.githubusercontent.com/mmio0004/DataViz2/main/data/Ordered_Sunburst_Dataset_Rounded_3_cvd_types.csv"
-        },
-        "transform": [
-          {
-            "aggregate": [
-              {"op": "sum", "field": "Value", "as": "TotalValue"}
-            ],
-            "groupby": ["Reason"]
-          }
-        ],
+        "url": "https://raw.githubusercontent.com/mmio0004/DataViz2/main/data/Ordered_Sunburst_Dataset_Rounded_3_cvd_types[V2].csv"
+      },
+      "transform": [
+        {
+          "aggregate": [
+            {"op": "sum", "field": "Value", "as": "TotalValue"}
+          ],
+          "groupby": ["Reason"]
+        }
+      ],
       "mark": {
         "type": "arc",
         "innerRadius": 40,
@@ -27,35 +27,47 @@
           "field": "TotalValue",
           "type": "quantitative"
         },
-      "color": {
-        "field": "Reason",
-        "type": "nominal",
-        "scale": {
-          "domain": ["Ischemic heart disease", "Stroke", "Hypertensive heart disease"],
-          "range": ["#33A2D8", "#61AF17", "#924444",               
-          "#74B7D8", "#a6cee3", 
-          "#9BE05D", "#b2df8a",
-          "#a94c4c", "#c17171"]
+        "color": {
+          "field": "Reason",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Ischemic heart disease", "Stroke", "Hypertensive heart disease", "Cardiomyopathy and myocarditis", "Rheumatic heart disease"],
+            "range": ["#33A2D8", "#61AF17", "#924444"]
+          },
+          "legend": {
+            "labelFontSize": 18,
+            "titleFontSize": 19
+          }
         },
-        "legend": {
-          "labelFontSize": 18,
-          "titleFontSize": 19
-      }
-      },
         "tooltip": [
           {"field": "Reason", "type": "nominal", "title": "Reason"},
           {"field": "TotalValue", "type": "quantitative", "title": "Total Value"}
         ]
       }
-
-          },
+    },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/mmio0004/DataViz2/main/data/Ordered_Sunburst_Dataset_Rounded_3_cvd_types.csv"
+        "url": "https://raw.githubusercontent.com/mmio0004/DataViz2/main/data/Ordered_Sunburst_Dataset_Rounded_3_cvd_types[V2].csv"
       },
-      "mark": {"type": "arc", "innerRadius": 100,        "stroke": "black",
-      "strokeWidth": 2    },        "encoding": {
-        "theta": {"field": "Value", "type": "quantitative"},
+      "mark": {
+        "type": "arc",
+        "innerRadius": 100,
+        "stroke": "black",
+        "strokeWidth": 2
+      },
+      "transform": [
+        {
+          "aggregate": [
+            {"op": "sum", "field": "Value", "as": "TotalValueByGender"}
+          ],
+          "groupby": ["Reason", "By Gender"]
+        }
+      ],
+      "encoding": {
+        "theta": {
+          "field": "TotalValueByGender",
+          "type": "quantitative"
+        },
         "color": {
           "field": "By Gender",
           "type": "nominal",
@@ -63,27 +75,25 @@
             "domain": [
               "Ischemic heart disease-Male", "Ischemic heart disease-Female",
               "Stroke-Male", "Stroke-Female",
-              "Hypertensive heart disease-Male", "Hypertensive heart disease-Female"
+              "Hypertensive heart disease-Male", "Hypertensive heart disease-Female",
+              "Cardiomyopathy and myocarditis-Male", "Cardiomyopathy and myocarditis-Female",
+              "Rheumatic heart disease-Male", "Rheumatic heart disease-Female"
             ],
             "range": [
               "#74B7D8", "#a6cee3", 
               "#9BE05D", "#b2df8a",
-              "#DCA17E", "#D07F52"   
+              "#DCA17E", "#D07F52"
             ]
           },
-                  "legend": {
-                      "labelFontSize": 18,
-                      "titleFontSize": 19
-                  }
+          "legend": {
+            "labelFontSize": 18,
+            "titleFontSize": 19
+          }
         },
-          "order": {"field": "Order", "type": "quantitative"},
         "tooltip": [
           {"field": "By Gender", "type": "nominal", "title": "Reason by Gender"},
           {"field": "Reason", "type": "nominal", "title": "Reason"},
-          {"field": "Gender", "type": "nominal", "title": "Gender"},
-          {"field": "Value", "type": "quantitative", "title": "Value"},
-          {"field": "Order", "type": "quantitative", "title": "Order"}
-
+          {"field": "Value", "type": "quantitative", "title": "Value"}
         ]
       }
     }
