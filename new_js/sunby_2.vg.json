@@ -43,8 +43,8 @@
           }
         },
         "tooltip": [
-          {"field": "Reason", "type": "nominal", "title": "Reason"},
-          {"field": "TotalValue", "type": "quantitative", "title": "Total Value"}
+          {"field": "Reason", "type": "nominal", "title": "Cardiovascular Disease Type"},
+          {"field": "TotalValue", "type": "quantitative", "title": "Total Death Rate (per 100,000 People)"}
         ]
       }
     },
