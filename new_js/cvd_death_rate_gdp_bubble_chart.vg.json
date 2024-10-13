@@ -77,7 +77,11 @@
               "domain": [1000000, 10000000, 50000000, 100000000, 500000000],
               "range": [30, 100, 200, 300, 500, 900]
             },
-            "legend": {"format": ".1s"}
+            "legend": {
+              "format": ".1s",
+              "labelFontSize": 11,
+              "titleFontSize": 11
+            }
           },
           "color": {
             "field": "Continent",

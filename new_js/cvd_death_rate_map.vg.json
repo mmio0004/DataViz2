@@ -76,11 +76,15 @@
             "type": "quantitative",
             "title": "Death Rate (per 100,000 People)",
             "scale": {
+              "type": "threshold",
+              "domain": [100, 200, 300, 400, 500],
               "scheme": "oranges"
             },
             "legend": {
-              "titleLimit": 200, 
-              "labelLimit": 150
+              "title": "Death Rate (per 100,000 People)",
+              "format": ",.0f",
+              "labelFontSize": 11,
+              "titleFontSize": 11
             }
           },
           "value": "lightgray"
@@ -97,7 +101,7 @@
       }
     },
     {
-      "description": "Text Annotation for Angola - Line 1",
+      "description": "Text Annotation for Africa - Line 1",
       "mark": {
         "type": "text",
         "align": "left",
@@ -112,7 +116,7 @@
       }
     },
     {
-      "description": "Text Annotation for Angola - Line 2",
+      "description": "Text Annotation for Africa - Line 2",
       "mark": {
         "type": "text",
         "align": "left",
@@ -127,7 +131,7 @@
       }
     },
     {
-      "description": "Text Annotation for Angola - Line 3",
+      "description": "Text Annotation for Africa - Line 3",
       "mark": {
         "type": "text",
         "align": "left",
@@ -142,7 +146,7 @@
       }
     },
     {
-      "description": "Text Annotation for Angola - Line 4",
+      "description": "Text Annotation for Africa - Line 4",
       "mark": {
         "type": "text",
         "align": "left",
