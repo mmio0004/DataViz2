@@ -3,17 +3,10 @@
   "description": "A layered donut chart with embedded data.",
   "width": 350,
   "height": 400,
-  "data": {
-    "values": [
-      {"category": 1, "value": 4},
-      {"category": 2, "value": 5},
-      {"category": 3, "value": 6}
-    ]
-  },
   "layer": [
     {
       "data": {
-          "url": "https://raw.githubusercontent.com/mmio0004/DataViz2/main/data/Modified_Sunburst_Dataset_Rounded_3_cvd_types.csv"
+          "url": "https://raw.githubusercontent.com/mmio0004/DataViz2/main/data/Ordered_Sunburst_Dataset_Rounded_3_cvd_types.csv"
         },
         "transform": [
           {
@@ -58,7 +51,7 @@
           },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/mmio0004/DataViz2/main/data/Modified_Sunburst_Dataset_Rounded_3_cvd_types.csv"
+        "url": "https://raw.githubusercontent.com/mmio0004/DataViz2/main/data/Ordered_Sunburst_Dataset_Rounded_3_cvd_types.csv"
       },
       "mark": {"type": "arc", "innerRadius": 100,        "stroke": "black",
       "strokeWidth": 2    },        "encoding": {
