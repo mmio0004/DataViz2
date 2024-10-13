@@ -1,13 +1,13 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "A layered donut chart with cardiovascular disease data by gender.",
+    "description": "A layered donut chart showing cardiovascular diseases and gender.",
     "width": 350,
     "height": 400,
-    "data": {
-      "url": "https://raw.githubusercontent.com/mmio0004/DataViz2/main/data/Modified_Sunburst_Dataset[FM Only].csv"
-    },
     "layer": [
       {
+        "data": {
+          "url": "https://raw.githubusercontent.com/mmio0004/DataViz2/main/data/Modified_Sunburst_Dataset_Rounded.csv"
+        },
         "transform": [
           {
             "aggregate": [
@@ -40,12 +40,15 @@
             }
           },
           "tooltip": [
-            {"field": "Reason", "type": "nominal", "title": "Cardiovascular Disease Type"},
-            {"field": "TotalValue", "type": "quantitative", "title": "Total Death Rate"}
+            {"field": "Reason", "type": "nominal", "title": "Disease Type"},
+            {"field": "TotalValue", "type": "quantitative", "title": "Total Value"}
           ]
         }
       },
       {
+        "data": {
+          "url": "https://raw.githubusercontent.com/mmio0004/DataViz2/main/data/Modified_Sunburst_Dataset_Rounded.csv"
+        },
         "mark": {
           "type": "arc",
           "innerRadius": 100,
@@ -53,10 +56,7 @@
           "strokeWidth": 2
         },
         "encoding": {
-          "theta": {
-            "field": "Value",
-            "type": "quantitative"
-          },
+          "theta": {"field": "Value", "type": "quantitative"},
           "color": {
             "field": "By Gender",
             "type": "nominal",
@@ -67,7 +67,7 @@
                 "Hypertensive heart disease-Male", "Hypertensive heart disease-Female"
               ],
               "range": [
-                "#74B7D8", "#a6cee3",
+                "#74B7D8", "#a6cee3", 
                 "#9BE05D", "#b2df8a",
                 "#DCA17E", "#D07F52"
               ]
@@ -77,15 +77,12 @@
               "titleFontSize": 19
             }
           },
-          "order": {
-            "field": "Order",
-            "type": "quantitative"
-          },
+          "order": {"field": "Order", "type": "quantitative"},
           "tooltip": [
-            {"field": "By Gender", "type": "nominal", "title": "Disease Type by Gender"},
-            {"field": "Reason", "type": "nominal", "title": "Cardiovascular Disease Type"},
+            {"field": "By Gender", "type": "nominal", "title": "Gender by Disease"},
+            {"field": "Reason", "type": "nominal", "title": "Disease Type"},
             {"field": "Gender", "type": "nominal", "title": "Gender"},
-            {"field": "Value", "type": "quantitative", "title": "Death Rate"},
+            {"field": "Value", "type": "quantitative", "title": "Value"},
             {"field": "Order", "type": "quantitative", "title": "Order"}
           ]
         }
