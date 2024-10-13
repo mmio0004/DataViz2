@@ -52,7 +52,7 @@
       "x": {
         "field": "GDP per capita, PPP (constant 2017 international $)",
         "type": "quantitative",
-        "title": "GDP per Capita (USD 2017 Rate)",
+        "title": "GDP per Capita (USD 2017 Rate) [Log Scale]",
         "axis": {"tickCount": 7},
         "scale": {"type": "log", "domain": [500, 150000]}
       },
