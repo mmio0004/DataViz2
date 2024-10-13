@@ -1,12 +1,12 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A layered donut chart with matching angles for segments in both inner and outer circles.",
-  "width": 350,
+  "description": "A layered donut chart with matching colors between segments and legend.",
+  "width": 831,
   "height": 400,
   "layer": [
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/mmio0004/DataViz2/main/data/Ordered_Sunburst_Dataset_Rounded_3_cvd_types[V2].csv"
+        "url": "https://raw.githubusercontent.com/mmio0004/DataViz2/main/data/Modified_Sunburst_Dataset_Rounded_all_types.csv"
       },
       "transform": [
         {
@@ -32,11 +32,14 @@
           "type": "nominal",
           "scale": {
             "domain": ["Ischemic heart disease", "Stroke", "Hypertensive heart disease", "Cardiomyopathy and myocarditis", "Rheumatic heart disease"],
-            "range": ["#33A2D8", "#61AF17", "#924444"]
+            "range": ["#d49e75", "#d475ab", "#8e6c8a", "#468f96", "#837465"]
           },
           "legend": {
-            "labelFontSize": 18,
-            "titleFontSize": 19
+            "orient": "top-right",
+            "titleLimit": 200, 
+            "labelLimit": 300,
+            "labelFontSize": 11, 
+            "titleFontSize": 11
           }
         },
         "tooltip": [
@@ -47,7 +50,7 @@
     },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/mmio0004/DataViz2/main/data/Ordered_Sunburst_Dataset_Rounded_3_cvd_types[V2].csv"
+        "url": "https://raw.githubusercontent.com/mmio0004/DataViz2/main/data/Modified_Sunburst_Dataset_Rounded_all_types.csv"
       },
       "mark": {
         "type": "arc",
@@ -55,45 +58,24 @@
         "stroke": "black",
         "strokeWidth": 2
       },
-      "transform": [
-        {
-          "aggregate": [
-            {"op": "sum", "field": "Value", "as": "TotalValueByGender"}
-          ],
-          "groupby": ["Reason", "By Gender"]
-        }
-      ],
       "encoding": {
         "theta": {
-          "field": "TotalValueByGender",
+          "field": "Value",
           "type": "quantitative"
         },
         "color": {
-          "field": "By Gender",
+          "field": "Reason",
           "type": "nominal",
           "scale": {
-            "domain": [
-              "Ischemic heart disease-Male", "Ischemic heart disease-Female",
-              "Stroke-Male", "Stroke-Female",
-              "Hypertensive heart disease-Male", "Hypertensive heart disease-Female",
-              "Cardiomyopathy and myocarditis-Male", "Cardiomyopathy and myocarditis-Female",
-              "Rheumatic heart disease-Male", "Rheumatic heart disease-Female"
-            ],
-            "range": [
-              "#74B7D8", "#a6cee3", 
-              "#9BE05D", "#b2df8a",
-              "#DCA17E", "#D07F52"
-            ]
+            "domain": ["Ischemic heart disease", "Stroke", "Hypertensive heart disease", "Cardiomyopathy and myocarditis", "Rheumatic heart disease"],
+            "range": ["#d49e75", "#d475ab", "#8e6c8a", "#468f96", "#837465"] 
           },
-          "legend": {
-            "labelFontSize": 18,
-            "titleFontSize": 19
-          }
+          "legend": null
         },
         "tooltip": [
-          {"field": "By Gender", "type": "nominal", "title": "Reason by Gender"},
-          {"field": "Reason", "type": "nominal", "title": "Reason"},
-          {"field": "Value", "type": "quantitative", "title": "Value"}
+          {"field": "By Gender", "type": "nominal", "title": "Gender"},
+          {"field": "Reason", "type": "nominal", "title": "Cardiovascular Disease Type"},
+          {"field": "Value", "type": "quantitative", "title": "Death Rate (per 100,000 People)"}
         ]
       }
     }
