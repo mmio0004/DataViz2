@@ -101,64 +101,105 @@
       }
     },
     {
-      "description": "Text Annotation for Africa - Line 1",
-      "mark": {
-        "type": "text",
-        "align": "left",
-        "dx": 5,
-        "dy": 110,
-        "fontSize": 13,
-        "fontWeight": "bold",
-        "color": "black"
-      },
+      "transform": [
+        {"filter": "datum.properties.NAME == 'Canada'"},
+        {"calculate": "-150", "as": "longitude"}, 
+        {"calculate": "40", "as": "latitude"},
+        {
+          "calculate": "split('Canada\\'s Medicare \\n system offers free \\n preventive care \\n and early treatment', '\\n')",
+
+          "as": "annotationText"
+        }
+      ],
+      "mark": {"type": "text", "dx": 0, "dy": 0, "color": "black"},
       "encoding": {
-        "text": {"value": "Most countries in Africa"}
+        "longitude": {"field": "longitude"},
+        "latitude": {"field": "latitude"},
+        "text": {"field": "annotationText"}
       }
     },
     {
-      "description": "Text Annotation for Africa - Line 2",
-      "mark": {
-        "type": "text",
-        "align": "left",
-        "dx": 5,
-        "dy": 123,
-        "fontSize": 13,
-        "fontWeight": "bold",
-        "color": "black"
-      },
+      "transform": [
+        {"filter": "datum.properties.NAME == 'Canada'"},
+        {"calculate": "-110", "as": "longitude"},
+        {"calculate": "60", "as": "latitude"},
+        {"calculate": "-150", "as": "longitude2"},
+        {"calculate": "43", "as": "latitude2"} 
+      ],
+      "mark": {"type": "rule", "stroke": "black", "strokeWidth": 1},
       "encoding": {
-        "text": {"value": "have very significant"}
+        "longitude": {"field": "longitude"},
+        "latitude": {"field": "latitude"},
+        "longitude2": {"field": "longitude2"},
+        "latitude2": {"field": "latitude2"}
       }
     },
     {
-      "description": "Text Annotation for Africa - Line 3",
-      "mark": {
-        "type": "text",
-        "align": "left",
-        "dx": 5,
-        "dy": 136,
-        "fontSize": 13,
-        "fontWeight": "bold",
-        "color": "black"
-      },
+      "transform": [
+        {"filter": "datum.properties.NAME == 'Japan'"},
+        {"calculate": "155", "as": "longitude"},
+        {"calculate": "27", "as": "latitude"}, 
+        {
+          "calculate": "split('Japan\\'s healthcare \\n system ensures \\n universal coverage \\n for all citizens', '\\n')",
+          "as": "annotationText"
+        }
+      ],
+      "mark": {"type": "text", "dx": 0, "dy": 0, "color": "black"},
       "encoding": {
-        "text": {"value": "cardiovascular disease"}
+        "longitude": {"field": "longitude"},
+        "latitude": {"field": "latitude"},
+        "text": {"field": "annotationText"}
       }
     },
     {
-      "description": "Text Annotation for Africa - Line 4",
-      "mark": {
-        "type": "text",
-        "align": "left",
-        "dx": 5,
-        "dy": 149,
-        "fontSize": 13,
-        "fontWeight": "bold",
-        "color": "black"
-      },
+      "transform": [
+        {"filter": "datum.properties.NAME == 'Japan'"},
+        {"calculate": "155", "as": "longitude"},
+        {"calculate": "30", "as": "latitude"}, 
+        {"calculate": "138", "as": "longitude2"},
+        {"calculate": "35", "as": "latitude2"}   
+      ],
+      "mark": {"type": "rule", "stroke": "black", "strokeWidth": 1},
       "encoding": {
-        "text": {"value": "burden."}
+        "longitude": {"field": "longitude"},
+        "latitude": {"field": "latitude"},
+        "longitude2": {"field": "longitude2"},
+        "latitude2": {"field": "latitude2"}
+      }
+    },    
+    {
+      "transform": [
+        {"filter": "datum.properties.NAME == 'Australia'"},
+        {"calculate": "115", "as": "longitude"},
+        {"calculate": "-47", "as": "latitude"},
+        {
+          "calculate": "split('Australia\\'s top healthcare system \\n lowers cardiovascular death rates', '\\n')",
+          "as": "annotationText"
+        }
+      ],
+      "mark": {"type": "text", "dx": 0, "dy": 0, "color": "black"},
+      "encoding": {
+        "longitude": {"field": "longitude"},
+        "latitude": {"field": "latitude"},
+        "text": {"field": "annotationText"}
+      }
+    },
+    {
+      "transform": [
+        {"filter": "datum.properties.NAME == 'Australia'"},
+        {"calculate": "130", "as": "longitude"},
+        {"calculate": "-27", "as": "latitude"}, 
+        {"calculate": "115", "as": "longitude2"},
+        {"calculate": "-44", "as": "latitude2"}   
+      ],
+      "mark": {"type": "rule", "stroke": "black", "strokeWidth": 1},
+      "encoding": {
+        "longitude": {"field": "longitude"},
+        "latitude": {"field": "latitude"},
+        "longitude2": {"field": "longitude2"},
+        "latitude2": {"field": "latitude2"}
       }
     }
+    
   ]
 }
