@@ -36,6 +36,7 @@
           },
           "legend": {
             "orient": "top-right",
+            "title": "Cardiovascular Disease Type",
             "titleLimit": 200, 
             "labelLimit": 300,
             "labelFontSize": 11, 
