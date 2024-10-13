@@ -6,7 +6,7 @@
     "layer": [
       {
         "data": {
-          "url": "https://raw.githubusercontent.com/mmio0004/DataViz2/main/data/Modified_Sunburst_Dataset_Rounded_3_types.csv"
+          "url": "https://raw.githubusercontent.com/mmio0004/DataViz2/main/data/Modified_Sunburst_Dataset_Rounded_3_cvd_types.csv"
         },
         "transform": [
           {
@@ -47,7 +47,7 @@
       },
       {
         "data": {
-          "url": "https://raw.githubusercontent.com/mmio0004/DataViz2/main/data/Modified_Sunburst_Dataset_Rounded_3_types.csv"
+          "url": "https://raw.githubusercontent.com/mmio0004/DataViz2/main/data/Modified_Sunburst_Dataset_Rounded_3_cvd_types.csv"
         },
         "mark": {
           "type": "arc",
