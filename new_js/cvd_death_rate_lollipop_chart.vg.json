@@ -98,7 +98,7 @@
         "text": {
           "condition": {
             "test": "datum.Entity === 'Africa'",
-            "value": "Africa’s cardiovascular death rate"
+            "value": "Africa’s high death rates result"
           }
         }
       }
@@ -127,7 +127,7 @@
         "text": {
           "condition": {
             "test": "datum.Entity === 'Africa'",
-            "value": "is the highest globally, reflecting"
+            "value": "from poverty and focus on"
           }
         }
       }
@@ -156,7 +156,36 @@
         "text": {
           "condition": {
             "test": "datum.Entity === 'Africa'",
-            "value": "severe healthcare challenges."
+            "value": "infectious diseases, neglecting"
+          }
+        }
+      }
+    },
+    {
+      "description": "Text Annotation for Africa - Line 4",
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": -140,
+        "dy": 69, 
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "black"
+      },
+      "encoding": {
+        "x": {
+          "field": "Age-standardized death rate from cardiovascular diseases among both sexes",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Entity",
+          "type": "ordinal",
+          "sort": "-x"
+        },
+        "text": {
+          "condition": {
+            "test": "datum.Entity === 'Africa'",
+            "value": "non-communicable diseases"
           }
         }
       }
