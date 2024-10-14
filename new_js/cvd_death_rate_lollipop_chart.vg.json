@@ -189,6 +189,123 @@
           }
         }
       }
+    },
+    {
+      "description": "Text Annotation for Oceania - Line 1",
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 25,
+        "dy": -10,
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "black"
+      },
+      "encoding": {
+        "x": {
+          "field": "Age-standardized death rate from cardiovascular diseases among both sexes",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Entity",
+          "type": "ordinal",
+          "sort": "-x"
+        },
+        "text": {
+          "condition": {
+            "test": "datum.Entity === 'Oceania'",
+            "value": "Oceania’s low death rates are the result"
+          }
+        }
+      }
+    },
+    {
+      "description": "Text Annotation for Oceania - Line 2",
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 25,
+        "dy": 3, 
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "black"
+      },
+      "encoding": {
+        "x": {
+          "field": "Age-standardized death rate from cardiovascular diseases among both sexes",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Entity",
+          "type": "ordinal",
+          "sort": "-x"
+        },
+        "text": {
+          "condition": {
+            "test": "datum.Entity === 'Oceania'",
+            "value": "of active public health initiatives, early"
+          }
+        }
+      }
+    },
+    {
+      "description": "Text Annotation for Oceania - Line 3",
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 25,
+        "dy": 16, 
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "black"
+      },
+      "encoding": {
+        "x": {
+          "field": "Age-standardized death rate from cardiovascular diseases among both sexes",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Entity",
+          "type": "ordinal",
+          "sort": "-x"
+        },
+        "text": {
+          "condition": {
+            "test": "datum.Entity === 'Oceania'",
+            "value": "disease screening and a strong cultural "
+          }
+        }
+      }
+    },
+    {
+      "description": "Text Annotation for Oceania - Line 4",
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 25,
+        "dy": 29, 
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "black"
+      },
+      "encoding": {
+        "x": {
+          "field": "Age-standardized death rate from cardiovascular diseases among both sexes",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Entity",
+          "type": "ordinal",
+          "sort": "-x"
+        },
+        "text": {
+          "condition": {
+            "test": "datum.Entity === 'Oceania'",
+            "value": "emphasis on outdoor activities"
+          }
+        }
+      }
     }
+    
   ]
 }
