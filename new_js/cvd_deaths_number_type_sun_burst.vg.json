@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A layered donut chart with matching colors between segments and legend.",
+  "description": "A layered sunburst chart showing cardiovascular disease death rates by type and gender.",
   "width": 831,
   "height": 400,
   "layer": [
@@ -32,15 +32,21 @@
           "type": "nominal",
           "scale": {
             "domain": ["Ischemic heart disease", "Stroke", "Hypertensive heart disease", "Cardiomyopathy and myocarditis", "Rheumatic heart disease"],
-            "range": ["#d49e75", "#d475ab", "#8e6c8a", "#468f96", "#837465"]
+            "range": ["#33A2D8", "#61AF17", "#924444", "#fd8b17", "#7B4596",               
+            "#74B7D8", "#a6cee3", 
+            "#9BE05D", "#b2df8a",
+            "#a94c4c", "#c17171",
+            "#ffa242", "#ffc367",
+            "#A97DBF", "#cab2d6"]
           },
           "legend": {
-            "orient": "top-right",
-            "title": "Cardiovascular Disease Type",
-            "titleLimit": 200, 
+            "orient": "right",
+            "title": "Cardiovascular Disease Type and Gender Categories",
+            "labelFontSize": 11,
+            "titleFontSize": 11,
+            "titleLimit": 300, 
             "labelLimit": 300,
-            "labelFontSize": 11, 
-            "titleFontSize": 11
+            "offset": -180
           }
         },
         "tooltip": [
@@ -71,11 +77,23 @@
           "type": "quantitative"
         },
         "color": {
-          "field": "Reason",
+          "field": "By Gender",
           "type": "nominal",
           "scale": {
-            "domain": ["Ischemic heart disease", "Stroke", "Hypertensive heart disease", "Cardiomyopathy and myocarditis", "Rheumatic heart disease"],
-            "range": ["#d49e75", "#d475ab", "#8e6c8a", "#468f96", "#837465"] 
+            "domain": [
+              "Ischemic heart disease-Male", "Ischemic heart disease-Female",
+              "Stroke-Male", "Stroke-Female",
+              "Hypertensive heart disease-Male", "Hypertensive heart disease-Female",
+              "Cardiomyopathy and myocarditis-Male", "Cardiomyopathy and myocarditis-Female",
+              "Rheumatic heart disease-Male", "Rheumatic heart disease-Female"
+            ],
+            "range": [
+              "#74B7D8", "#a6cee3", 
+              "#9BE05D", "#b2df8a",
+              "#DCA17E", "#D07F52",
+              "#E8A03D", "#F1BD77",
+              "#A97DBF", "#cab2d6" 
+            ]
           },
           "legend": null
         },
