@@ -330,7 +330,7 @@
         "text": {
           "condition": {
             "test": "datum.Entity === 'Asia'",
-            "value": "rapid urbanisation."
+            "value": "rapid urbanisation"
           }
         }
       }
