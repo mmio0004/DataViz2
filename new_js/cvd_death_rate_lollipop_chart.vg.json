@@ -79,10 +79,9 @@
       "mark": {
         "type": "text",
         "align": "left",
-        "dx": -140,
+        "dx": -130,
         "dy": 30,
         "fontSize": 11,
-        "fontWeight": "bold",
         "color": "black"
       },
       "encoding": {
@@ -108,10 +107,9 @@
       "mark": {
         "type": "text",
         "align": "left",
-        "dx": -140,
+        "dx": -130,
         "dy": 43, 
         "fontSize": 11,
-        "fontWeight": "bold",
         "color": "black"
       },
       "encoding": {
@@ -137,10 +135,9 @@
       "mark": {
         "type": "text",
         "align": "left",
-        "dx": -140,
+        "dx": -130,
         "dy": 56, 
         "fontSize": 11,
-        "fontWeight": "bold",
         "color": "black"
       },
       "encoding": {
@@ -166,10 +163,9 @@
       "mark": {
         "type": "text",
         "align": "left",
-        "dx": -140,
+        "dx": -130,
         "dy": 69, 
         "fontSize": 11,
-        "fontWeight": "bold",
         "color": "black"
       },
       "encoding": {
@@ -198,7 +194,6 @@
         "dx": -17,
         "dy": 30,
         "fontSize": 11,
-        "fontWeight": "bold",
         "color": "black"
       },
       "encoding": {
@@ -227,7 +222,6 @@
         "dx": -17,
         "dy": 43, 
         "fontSize": 11,
-        "fontWeight": "bold",
         "color": "black"
       },
       "encoding": {
@@ -256,7 +250,6 @@
         "dx": -17,
         "dy": 56, 
         "fontSize": 11,
-        "fontWeight": "bold",
         "color": "black"
       },
       "encoding": {
@@ -285,7 +278,6 @@
         "dx": -17,
         "dy": 69, 
         "fontSize": 11,
-        "fontWeight": "bold",
         "color": "black"
       },
       "encoding": {
@@ -314,7 +306,6 @@
         "dx": -17,
         "dy": 82, 
         "fontSize": 11,
-        "fontWeight": "bold",
         "color": "black"
       },
       "encoding": {
@@ -341,9 +332,8 @@
         "type": "text",
         "align": "left",
         "dx": 25,
-        "dy": -10,
+        "dy": -13,
         "fontSize": 11,
-        "fontWeight": "bold",
         "color": "black"
       },
       "encoding": {
@@ -370,9 +360,8 @@
         "type": "text",
         "align": "left",
         "dx": 25,
-        "dy": 3, 
+        "dy": 0, 
         "fontSize": 11,
-        "fontWeight": "bold",
         "color": "black"
       },
       "encoding": {
@@ -399,9 +388,8 @@
         "type": "text",
         "align": "left",
         "dx": 25,
-        "dy": 16, 
+        "dy": 13, 
         "fontSize": 11,
-        "fontWeight": "bold",
         "color": "black"
       },
       "encoding": {
@@ -428,9 +416,8 @@
         "type": "text",
         "align": "left",
         "dx": 25,
-        "dy": 29, 
+        "dy": 26, 
         "fontSize": 11,
-        "fontWeight": "bold",
         "color": "black"
       },
       "encoding": {
