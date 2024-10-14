@@ -191,6 +191,151 @@
       }
     },
     {
+      "description": "Text Annotation for Asia - Line 1",
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": -17,
+        "dy": 30,
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "black"
+      },
+      "encoding": {
+        "x": {
+          "field": "Age-standardized death rate from cardiovascular diseases among both sexes",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Entity",
+          "type": "ordinal",
+          "sort": "-x"
+        },
+        "text": {
+          "condition": {
+            "test": "datum.Entity === 'Asia'",
+            "value": "Asia’s elevated death rates are"
+          }
+        }
+      }
+    },
+    {
+      "description": "Text Annotation for Asia - Line 2",
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": -17,
+        "dy": 43, 
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "black"
+      },
+      "encoding": {
+        "x": {
+          "field": "Age-standardized death rate from cardiovascular diseases among both sexes",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Entity",
+          "type": "ordinal",
+          "sort": "-x"
+        },
+        "text": {
+          "condition": {
+            "test": "datum.Entity === 'Asia'",
+            "value": "fueled by increasing consumption"
+          }
+        }
+      }
+    },
+    {
+      "description": "Text Annotation for Asia - Line 3",
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": -17,
+        "dy": 56, 
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "black"
+      },
+      "encoding": {
+        "x": {
+          "field": "Age-standardized death rate from cardiovascular diseases among both sexes",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Entity",
+          "type": "ordinal",
+          "sort": "-x"
+        },
+        "text": {
+          "condition": {
+            "test": "datum.Entity === 'Asia'",
+            "value": "of processed foods, growing obesity"
+          }
+        }
+      }
+    },
+    {
+      "description": "Text Annotation for Asia - Line 4",
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": -17,
+        "dy": 69, 
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "black"
+      },
+      "encoding": {
+        "x": {
+          "field": "Age-standardized death rate from cardiovascular diseases among both sexes",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Entity",
+          "type": "ordinal",
+          "sort": "-x"
+        },
+        "text": {
+          "condition": {
+            "test": "datum.Entity === 'Asia'",
+            "value": "and hypertension, largely linked to"
+          }
+        }
+      }
+    },
+    {
+      "description": "Text Annotation for Asia - Line 5",
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": -17,
+        "dy": 82, 
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "black"
+      },
+      "encoding": {
+        "x": {
+          "field": "Age-standardized death rate from cardiovascular diseases among both sexes",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Entity",
+          "type": "ordinal",
+          "sort": "-x"
+        },
+        "text": {
+          "condition": {
+            "test": "datum.Entity === 'Asia'",
+            "value": "rapid urbanisation."
+          }
+        }
+      }
+    },    
+    {
       "description": "Text Annotation for Oceania - Line 1",
       "mark": {
         "type": "text",
